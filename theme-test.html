@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Test</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            padding: 40px;
+            background: var(--bg-primary, #fff);
+            color: var(--text-primary, #000);
+            transition: all 0.3s ease;
+        }
+
+        .controls {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .control-group label {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: 2px solid #8b5cf6;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        button:hover {
+            background: #8b5cf6;
+            color: white;
+        }
+
+        button.active {
+            background: #8b5cf6;
+            color: white;
+        }
+
+        .preview {
+            padding: 40px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, var(--accent-start, #8b5cf6) 0%, var(--accent-end, #ec4899) 100%);
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .info {
+            background: var(--card-bg, #f9fafb);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .info h3 {
+            margin-top: 0;
+            color: var(--text-primary);
+        }
+
+        .var-display {
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .var-display strong {
+            color: var(--text-primary);
+        }
+    </style>
+    <link rel="stylesheet" href="/src/styles/Background.css">
+    <link rel="stylesheet" href="/src/App.css">
+</head>
+<body>
+    <h1>🎨 Theme Test Page</h1>
+
+    <div class="controls">
+        <div class="control-group">
+            <label>Gradient Theme:</label>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <button onclick="setTheme('purple-pink')" id="btn-purple-pink">Purple Pink</button>
+                <button onclick="setTheme('blue-green')" id="btn-blue-green">Blue Green</button>
+                <button onclick="setTheme('orange-red')" id="btn-orange-red">Orange Red</button>
+                <button onclick="setTheme('aurora')" id="btn-aurora">Aurora</button>
+                <button onclick="setTheme('northern-lights')" id="btn-northern-lights">Northern Lights</button>
+                <button onclick="setTheme('desert-dune')" id="btn-desert-dune">Desert Dune</button>
+                <button onclick="setTheme('coral-reef')" id="btn-coral-reef">Coral Reef</button>
+                <button onclick="setTheme('autumn-forest')" id="btn-autumn-forest">Autumn Forest</button>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label>Mode:</label>
+            <div style="display: flex; gap: 10px;">
+                <button onclick="setMode('light')" id="btn-light">☀️ Light</button>
+                <button onclick="setMode('dark')" id="btn-dark">🌙 Dark</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="preview">
+        <h2>Gradient Preview</h2>
+        <p>This box shows the current gradient theme</p>
+    </div>
+
+    <div class="info">
+        <h3>Current Settings</h3>
+        <div class="var-display" id="info"></div>
+    </div>
+
+    <div class="info">
+        <h3>CSS Variables</h3>
+        <div class="var-display" id="vars"></div>
+    </div>
+
+    <script>
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('docs-theme', theme);
+            updateDisplay();
+            updateButtons();
+        }
+
+        function setMode(mode) {
+            document.documentElement.setAttribute('data-theme-mode', mode);
+            localStorage.setItem('theme-mode', mode);
+            updateDisplay();
+            updateButtons();
+        }
+
+        function updateDisplay() {
+            const theme = document.documentElement.getAttribute('data-theme') || 'purple-pink';
+            const mode = document.documentElement.getAttribute('data-theme-mode') || 'light';
+
+            const styles = getComputedStyle(document.documentElement);
+
+            document.getElementById('info').innerHTML = `
+                <strong>data-theme:</strong> ${theme}<br>
+                <strong>data-theme-mode:</strong> ${mode}<br>
+                <strong>LocalStorage theme-mode:</strong> ${localStorage.getItem('theme-mode') || 'not set'}<br>
+                <strong>LocalStorage docs-theme:</strong> ${localStorage.getItem('docs-theme') || 'not set'}
+            `;
+
+            document.getElementById('vars').innerHTML = `
+                <strong>--accent-start:</strong> ${styles.getPropertyValue('--accent-start').trim()}<br>
+                <strong>--accent-end:</strong> ${styles.getPropertyValue('--accent-end').trim()}<br>
+                <strong>--accent-gradient:</strong> ${styles.getPropertyValue('--accent-gradient').trim().substring(0, 60)}...<br>
+                <strong>--bg-primary:</strong> ${styles.getPropertyValue('--bg-primary').trim()}<br>
+                <strong>--text-primary:</strong> ${styles.getPropertyValue('--text-primary').trim()}<br>
+                <strong>--glow-color:</strong> ${styles.getPropertyValue('--glow-color').trim()}
+            `;
+        }
+
+        function updateButtons() {
+            const theme = document.documentElement.getAttribute('data-theme') || 'purple-pink';
+            const mode = document.documentElement.getAttribute('data-theme-mode') || 'light';
+
+            // Update theme buttons
+            ['purple-pink', 'blue-green', 'orange-red', 'aurora', 'northern-lights', 'desert-dune', 'coral-reef', 'autumn-forest'].forEach(t => {
+                const btn = document.getElementById(`btn-${t}`);
+                if (btn) btn.classList.toggle('active', t === theme);
+            });
+
+            // Update mode buttons
+            ['light', 'dark'].forEach(m => {
+                const btn = document.getElementById(`btn-${m}`);
+                if (btn) btn.classList.toggle('active', m === mode);
+            });
+        }
+
+        // Initialize
+        const savedTheme = localStorage.getItem('docs-theme') || 'purple-pink';
+        const savedMode = localStorage.getItem('theme-mode') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.documentElement.setAttribute('data-theme-mode', savedMode);
+        updateDisplay();
+        updateButtons();
+
+        console.log('🎨 Theme Test Page Loaded');
+        console.log('Current theme:', savedTheme);
+        console.log('Current mode:', savedMode);
+    </script>
+</body>
+</html>

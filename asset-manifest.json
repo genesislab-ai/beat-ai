@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/beatai/static/css/main.7eead69a.css",
+    "main.js": "/beatai/static/js/main.9274a288.js",
+    "static/css/998.4322d29d.chunk.css": "/beatai/static/css/998.4322d29d.chunk.css",
+    "static/js/998.669b7fda.chunk.js": "/beatai/static/js/998.669b7fda.chunk.js",
+    "static/css/176.02c3cd6d.chunk.css": "/beatai/static/css/176.02c3cd6d.chunk.css",
+    "static/js/176.0cb13872.chunk.js": "/beatai/static/js/176.0cb13872.chunk.js",
+    "static/css/409.b69758fa.chunk.css": "/beatai/static/css/409.b69758fa.chunk.css",
+    "static/js/409.1d3eee69.chunk.js": "/beatai/static/js/409.1d3eee69.chunk.js",
+    "static/js/453.e4b3b3ce.chunk.js": "/beatai/static/js/453.e4b3b3ce.chunk.js",
+    "static/js/925.c71b5cec.chunk.js": "/beatai/static/js/925.c71b5cec.chunk.js",
+    "static/js/576.c56e3f9b.chunk.js": "/beatai/static/js/576.c56e3f9b.chunk.js",
+    "static/js/286.f86ce607.chunk.js": "/beatai/static/js/286.f86ce607.chunk.js",
+    "static/css/959.6171f36a.chunk.css": "/beatai/static/css/959.6171f36a.chunk.css",
+    "static/js/959.9c5627e9.chunk.js": "/beatai/static/js/959.9c5627e9.chunk.js",
+    "static/media/logo.jpg": "/beatai/static/media/logo.76ada481f5ea13232db1.jpg",
+    "index.html": "/beatai/index.html",
+    "main.7eead69a.css.map": "/beatai/static/css/main.7eead69a.css.map",
+    "main.9274a288.js.map": "/beatai/static/js/main.9274a288.js.map",
+    "998.4322d29d.chunk.css.map": "/beatai/static/css/998.4322d29d.chunk.css.map",
+    "998.669b7fda.chunk.js.map": "/beatai/static/js/998.669b7fda.chunk.js.map",
+    "176.02c3cd6d.chunk.css.map": "/beatai/static/css/176.02c3cd6d.chunk.css.map",
+    "176.0cb13872.chunk.js.map": "/beatai/static/js/176.0cb13872.chunk.js.map",
+    "409.b69758fa.chunk.css.map": "/beatai/static/css/409.b69758fa.chunk.css.map",
+    "409.1d3eee69.chunk.js.map": "/beatai/static/js/409.1d3eee69.chunk.js.map",
+    "453.e4b3b3ce.chunk.js.map": "/beatai/static/js/453.e4b3b3ce.chunk.js.map",
+    "925.c71b5cec.chunk.js.map": "/beatai/static/js/925.c71b5cec.chunk.js.map",
+    "576.c56e3f9b.chunk.js.map": "/beatai/static/js/576.c56e3f9b.chunk.js.map",
+    "286.f86ce607.chunk.js.map": "/beatai/static/js/286.f86ce607.chunk.js.map",
+    "959.6171f36a.chunk.css.map": "/beatai/static/css/959.6171f36a.chunk.css.map",
+    "959.9c5627e9.chunk.js.map": "/beatai/static/js/959.9c5627e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7eead69a.css",
+    "static/js/main.9274a288.js"
+  ]
+}

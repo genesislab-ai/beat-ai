@@ -1,0 +1,1242 @@
+{
+  "title": "BeatAI Documentation",
+  "categories": [
+    {
+      "id": "usage-docs",
+      "title": "使用文档",
+      "description": "BeatAI 框架使用指南和 API 文档",
+      "sections": [
+        {
+          "title": "Getting Started",
+          "path": "/getting-started",
+          "items": [
+            {
+              "title": "Introduction",
+              "path": "/getting-started/introduction",
+              "file": "/docs/getting-started/introduction.md"
+            },
+            {
+              "title": "Quick Start",
+              "path": "/getting-started/quick-start",
+              "file": "/docs/getting-started/quick-start.md"
+            },
+            {
+              "title": "Installation",
+              "path": "/getting-started/installation",
+              "file": "/docs/getting-started/installation.md"
+            },
+            {
+              "title": "Theme Preview",
+              "path": "/getting-started/theme-preview",
+              "file": "/docs/getting-started/theme-preview.md"
+            }
+          ]
+        },
+        {
+          "title": "Guides",
+          "path": "/guides",
+          "items": [
+            {
+              "title": "Building Your First Bot",
+              "path": "/guides/first-bot",
+              "file": "/docs/guides/first-bot.md"
+            },
+            {
+              "title": "Plugin Development",
+              "path": "/guides/plugin-development",
+              "file": "/docs/guides/plugin-development.md"
+            },
+            {
+              "title": "Configuration",
+              "path": "/guides/configuration",
+              "file": "/docs/guides/configuration.md"
+            },
+            {
+              "title": "Deployment",
+              "path": "/guides/deployment",
+              "file": "/docs/guides/deployment.md"
+            }
+          ]
+        },
+        {
+          "title": "API Reference",
+          "path": "/api",
+          "items": [
+            {
+              "title": "Core API",
+              "path": "/api/core",
+              "file": "/docs/api/core.md"
+            },
+            {
+              "title": "Plugin API",
+              "path": "/api/plugin",
+              "file": "/docs/api/plugin.md"
+            },
+            {
+              "title": "Events",
+              "path": "/api/events",
+              "file": "/docs/api/events.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rust-course",
+      "title": "Rust语言圣经",
+      "description": "Rust 编程语言完整学习指南",
+      "sections": [
+        {
+          "title": "🔧 第一部分：寻找牛刀",
+          "path": "/rust-course/first-try/intro",
+          "file": "/docs/rust-course/first-try/intro.md",
+          "items": [
+            {
+              "title": "安装 Rust 环境",
+              "path": "/rust-course/first-try/installation",
+              "file": "/docs/rust-course/first-try/installation.md"
+            },
+            {
+              "title": "墙推 VSCode!",
+              "path": "/rust-course/first-try/editor",
+              "file": "/docs/rust-course/first-try/editor.md"
+            },
+            {
+              "title": "认识 Cargo",
+              "path": "/rust-course/first-try/cargo",
+              "file": "/docs/rust-course/first-try/cargo.md"
+            },
+            {
+              "title": "不仅仅是 Hello world",
+              "path": "/rust-course/first-try/hello-world",
+              "file": "/docs/rust-course/first-try/hello-world.md"
+            },
+            {
+              "title": "下载依赖太慢了？",
+              "path": "/rust-course/first-try/slowly-downloading",
+              "file": "/docs/rust-course/first-try/slowly-downloading.md"
+            }
+          ]
+        },
+        {
+          "title": "📚 第二部分：Rust 基础入门",
+          "path": "/rust-course/basic/intro",
+          "file": "/docs/rust-course/basic/intro.md",
+          "items": [
+            {
+              "title": "变量绑定与解构",
+              "path": "/rust-course/basic/variable",
+              "file": "/docs/rust-course/basic/variable.md"
+            },
+            {
+              "title": "基本类型",
+              "path": "/rust-course/basic/base-type/index",
+              "file": "/docs/rust-course/basic/base-type/index.md",
+              "children": [
+                {
+                  "title": "数值类型",
+                  "path": "/rust-course/basic/base-type/numbers",
+                  "file": "/docs/rust-course/basic/base-type/numbers.md"
+                },
+                {
+                  "title": "字符、布尔、单元类型",
+                  "path": "/rust-course/basic/base-type/char-bool",
+                  "file": "/docs/rust-course/basic/base-type/char-bool.md"
+                },
+                {
+                  "title": "语句与表达式",
+                  "path": "/rust-course/basic/base-type/statement-expression",
+                  "file": "/docs/rust-course/basic/base-type/statement-expression.md"
+                },
+                {
+                  "title": "函数",
+                  "path": "/rust-course/basic/base-type/function",
+                  "file": "/docs/rust-course/basic/base-type/function.md"
+                }
+              ]
+            },
+            {
+              "title": "所有权和借用",
+              "path": "/rust-course/basic/ownership/index",
+              "file": "/docs/rust-course/basic/ownership/index.md",
+              "children": [
+                {
+                  "title": "所有权",
+                  "path": "/rust-course/basic/ownership/ownership",
+                  "file": "/docs/rust-course/basic/ownership/ownership.md"
+                },
+                {
+                  "title": "引用与借用",
+                  "path": "/rust-course/basic/ownership/borrowing",
+                  "file": "/docs/rust-course/basic/ownership/borrowing.md"
+                }
+              ]
+            },
+            {
+              "title": "复合类型",
+              "path": "/rust-course/basic/compound-type/intro",
+              "file": "/docs/rust-course/basic/compound-type/intro.md",
+              "children": [
+                {
+                  "title": "字符串与切片",
+                  "path": "/rust-course/basic/compound-type/string-slice",
+                  "file": "/docs/rust-course/basic/compound-type/string-slice.md"
+                },
+                {
+                  "title": "元组",
+                  "path": "/rust-course/basic/compound-type/tuple",
+                  "file": "/docs/rust-course/basic/compound-type/tuple.md"
+                },
+                {
+                  "title": "结构体",
+                  "path": "/rust-course/basic/compound-type/struct",
+                  "file": "/docs/rust-course/basic/compound-type/struct.md"
+                },
+                {
+                  "title": "枚举",
+                  "path": "/rust-course/basic/compound-type/enum",
+                  "file": "/docs/rust-course/basic/compound-type/enum.md"
+                },
+                {
+                  "title": "数组",
+                  "path": "/rust-course/basic/compound-type/array",
+                  "file": "/docs/rust-course/basic/compound-type/array.md"
+                }
+              ]
+            },
+            {
+              "title": "流程控制",
+              "path": "/rust-course/basic/flow-control",
+              "file": "/docs/rust-course/basic/flow-control.md"
+            },
+            {
+              "title": "模式匹配",
+              "path": "/rust-course/basic/match-pattern/intro",
+              "file": "/docs/rust-course/basic/match-pattern/intro.md",
+              "children": [
+                {
+                  "title": "match 和 if let",
+                  "path": "/rust-course/basic/match-pattern/match-if-let",
+                  "file": "/docs/rust-course/basic/match-pattern/match-if-let.md"
+                },
+                {
+                  "title": "解构 Option",
+                  "path": "/rust-course/basic/match-pattern/option",
+                  "file": "/docs/rust-course/basic/match-pattern/option.md"
+                },
+                {
+                  "title": "模式适用场景",
+                  "path": "/rust-course/basic/match-pattern/pattern-match",
+                  "file": "/docs/rust-course/basic/match-pattern/pattern-match.md"
+                },
+                {
+                  "title": "全模式列表",
+                  "path": "/rust-course/basic/match-pattern/all-patterns",
+                  "file": "/docs/rust-course/basic/match-pattern/all-patterns.md"
+                }
+              ]
+            },
+            {
+              "title": "方法 Method",
+              "path": "/rust-course/basic/method",
+              "file": "/docs/rust-course/basic/method.md"
+            },
+            {
+              "title": "泛型和特征",
+              "path": "/rust-course/basic/trait/intro",
+              "file": "/docs/rust-course/basic/trait/intro.md",
+              "children": [
+                {
+                  "title": "泛型 Generics",
+                  "path": "/rust-course/basic/trait/generic",
+                  "file": "/docs/rust-course/basic/trait/generic.md"
+                },
+                {
+                  "title": "特征 Trait",
+                  "path": "/rust-course/basic/trait/trait",
+                  "file": "/docs/rust-course/basic/trait/trait.md"
+                },
+                {
+                  "title": "特征对象",
+                  "path": "/rust-course/basic/trait/trait-object",
+                  "file": "/docs/rust-course/basic/trait/trait-object.md"
+                },
+                {
+                  "title": "进一步深入特征",
+                  "path": "/rust-course/basic/trait/advance-trait",
+                  "file": "/docs/rust-course/basic/trait/advance-trait.md"
+                }
+              ]
+            },
+            {
+              "title": "集合类型",
+              "path": "/rust-course/basic/collections/intro",
+              "file": "/docs/rust-course/basic/collections/intro.md",
+              "children": [
+                {
+                  "title": "动态数组 Vector",
+                  "path": "/rust-course/basic/collections/vector",
+                  "file": "/docs/rust-course/basic/collections/vector.md"
+                },
+                {
+                  "title": "KV 存储 HashMap",
+                  "path": "/rust-course/basic/collections/hashmap",
+                  "file": "/docs/rust-course/basic/collections/hashmap.md"
+                }
+              ]
+            },
+            {
+              "title": "认识生命周期",
+              "path": "/rust-course/basic/lifetime",
+              "file": "/docs/rust-course/basic/lifetime.md"
+            },
+            {
+              "title": "返回值和错误处理",
+              "path": "/rust-course/basic/result-error/intro",
+              "file": "/docs/rust-course/basic/result-error/intro.md",
+              "children": [
+                {
+                  "title": "panic! 深入剖析",
+                  "path": "/rust-course/basic/result-error/panic",
+                  "file": "/docs/rust-course/basic/result-error/panic.md"
+                },
+                {
+                  "title": "返回值 Result 和?",
+                  "path": "/rust-course/basic/result-error/result",
+                  "file": "/docs/rust-course/basic/result-error/result.md"
+                }
+              ]
+            },
+            {
+              "title": "包和模块",
+              "path": "/rust-course/basic/crate-module/intro",
+              "file": "/docs/rust-course/basic/crate-module/intro.md",
+              "children": [
+                {
+                  "title": "包 Crate",
+                  "path": "/rust-course/basic/crate-module/crate",
+                  "file": "/docs/rust-course/basic/crate-module/crate.md"
+                },
+                {
+                  "title": "模块 Module",
+                  "path": "/rust-course/basic/crate-module/module",
+                  "file": "/docs/rust-course/basic/crate-module/module.md"
+                },
+                {
+                  "title": "使用 use 引入模块",
+                  "path": "/rust-course/basic/crate-module/use",
+                  "file": "/docs/rust-course/basic/crate-module/use.md"
+                }
+              ]
+            },
+            {
+              "title": "注释和文档",
+              "path": "/rust-course/basic/comment",
+              "file": "/docs/rust-course/basic/comment.md"
+            },
+            {
+              "title": "格式化输出",
+              "path": "/rust-course/basic/formatted-output",
+              "file": "/docs/rust-course/basic/formatted-output.md"
+            }
+          ]
+        },
+        {
+          "title": "💻 第三部分：入门实战",
+          "path": "/rust-course/basic-practice/intro",
+          "items": [
+            {
+              "title": "基本功能",
+              "path": "/rust-course/basic-practice/base-features",
+              "file": "/docs/rust-course/basic-practice/base-features.md"
+            },
+            {
+              "title": "模块化和错误处理",
+              "path": "/rust-course/basic-practice/refactoring",
+              "file": "/docs/rust-course/basic-practice/refactoring.md"
+            },
+            {
+              "title": "测试驱动开发",
+              "path": "/rust-course/basic-practice/tests",
+              "file": "/docs/rust-course/basic-practice/tests.md"
+            },
+            {
+              "title": "使用环境变量",
+              "path": "/rust-course/basic-practice/envs",
+              "file": "/docs/rust-course/basic-practice/envs.md"
+            },
+            {
+              "title": "重定向错误输出",
+              "path": "/rust-course/basic-practice/stderr",
+              "file": "/docs/rust-course/basic-practice/stderr.md"
+            },
+            {
+              "title": "使用迭代器改进",
+              "path": "/rust-course/basic-practice/iterators",
+              "file": "/docs/rust-course/basic-practice/iterators.md"
+            }
+          ],
+          "file": "/docs/rust-course/basic-practice/intro.md"
+        },
+        {
+          "title": "🚀 第四部分：Rust 高级进阶",
+          "path": "/rust-course/advance/intro",
+          "items": [
+            {
+              "title": "生命周期",
+              "path": "/rust-course/advance/lifetime/intro",
+              "file": "/docs/rust-course/advance/lifetime/intro.md",
+              "children": [
+                {
+                  "title": "深入生命周期",
+                  "path": "/rust-course/advance/lifetime/advance",
+                  "file": "/docs/rust-course/advance/lifetime/advance.md"
+                },
+                {
+                  "title": "&'static 和 T: 'static",
+                  "path": "/rust-course/advance/lifetime/static",
+                  "file": "/docs/rust-course/advance/lifetime/static.md"
+                }
+              ]
+            },
+            {
+              "title": "函数式编程",
+              "path": "/rust-course/advance/functional-programing/intro",
+              "file": "/docs/rust-course/advance/functional-programing/intro.md",
+              "children": [
+                {
+                  "title": "闭包 Closure",
+                  "path": "/rust-course/advance/functional-programing/closure",
+                  "file": "/docs/rust-course/advance/functional-programing/closure.md"
+                },
+                {
+                  "title": "迭代器 Iterator",
+                  "path": "/rust-course/advance/functional-programing/iterator",
+                  "file": "/docs/rust-course/advance/functional-programing/iterator.md"
+                }
+              ]
+            },
+            {
+              "title": "深入类型",
+              "path": "/rust-course/advance/into-types/intro",
+              "file": "/docs/rust-course/advance/into-types/intro.md",
+              "children": [
+                {
+                  "title": "类型转换",
+                  "path": "/rust-course/advance/into-types/converse",
+                  "file": "/docs/rust-course/advance/into-types/converse.md"
+                },
+                {
+                  "title": "newtype 和类型别名",
+                  "path": "/rust-course/advance/into-types/custom-type",
+                  "file": "/docs/rust-course/advance/into-types/custom-type.md"
+                },
+                {
+                  "title": "Sized 和不定长类型 DST",
+                  "path": "/rust-course/advance/into-types/sized",
+                  "file": "/docs/rust-course/advance/into-types/sized.md"
+                },
+                {
+                  "title": "枚举和整数",
+                  "path": "/rust-course/advance/into-types/enum-int",
+                  "file": "/docs/rust-course/advance/into-types/enum-int.md"
+                }
+              ]
+            },
+            {
+              "title": "智能指针",
+              "path": "/rust-course/advance/smart-pointer/intro",
+              "file": "/docs/rust-course/advance/smart-pointer/intro.md",
+              "children": [
+                {
+                  "title": "Box<T> 堆对象分配",
+                  "path": "/rust-course/advance/smart-pointer/box",
+                  "file": "/docs/rust-course/advance/smart-pointer/box.md"
+                },
+                {
+                  "title": "Deref 解引用",
+                  "path": "/rust-course/advance/smart-pointer/deref",
+                  "file": "/docs/rust-course/advance/smart-pointer/deref.md"
+                },
+                {
+                  "title": "Drop 释放资源",
+                  "path": "/rust-course/advance/smart-pointer/drop",
+                  "file": "/docs/rust-course/advance/smart-pointer/drop.md"
+                },
+                {
+                  "title": "Rc 与 Arc",
+                  "path": "/rust-course/advance/smart-pointer/rc-arc",
+                  "file": "/docs/rust-course/advance/smart-pointer/rc-arc.md"
+                },
+                {
+                  "title": "Cell 与 RefCell",
+                  "path": "/rust-course/advance/smart-pointer/cell-refcell",
+                  "file": "/docs/rust-course/advance/smart-pointer/cell-refcell.md"
+                }
+              ]
+            },
+            {
+              "title": "循环引用与自引用",
+              "path": "/rust-course/advance/circle-self-ref/intro",
+              "file": "/docs/rust-course/advance/circle-self-ref/intro.md",
+              "children": [
+                {
+                  "title": "Weak 与循环引用",
+                  "path": "/rust-course/advance/circle-self-ref/circle-reference",
+                  "file": "/docs/rust-course/advance/circle-self-ref/circle-reference.md"
+                },
+                {
+                  "title": "结构体中的自引用",
+                  "path": "/rust-course/advance/circle-self-ref/self-referential",
+                  "file": "/docs/rust-course/advance/circle-self-ref/self-referential.md"
+                }
+              ]
+            },
+            {
+              "title": "多线程并发编程",
+              "path": "/rust-course/advance/concurrency-with-threads/intro",
+              "file": "/docs/rust-course/advance/concurrency-with-threads/intro.md",
+              "children": [
+                {
+                  "title": "并发和并行",
+                  "path": "/rust-course/advance/concurrency-with-threads/concurrency-parallelism",
+                  "file": "/docs/rust-course/advance/concurrency-with-threads/concurrency-parallelism.md"
+                },
+                {
+                  "title": "使用多线程",
+                  "path": "/rust-course/advance/concurrency-with-threads/thread",
+                  "file": "/docs/rust-course/advance/concurrency-with-threads/thread.md"
+                },
+                {
+                  "title": "线程同步：消息传递",
+                  "path": "/rust-course/advance/concurrency-with-threads/message-passing",
+                  "file": "/docs/rust-course/advance/concurrency-with-threads/message-passing.md"
+                },
+                {
+                  "title": "线程同步：锁、Condvar 和信号量",
+                  "path": "/rust-course/advance/concurrency-with-threads/sync1",
+                  "file": "/docs/rust-course/advance/concurrency-with-threads/sync1.md"
+                },
+                {
+                  "title": "线程同步：Atomic 原子操作",
+                  "path": "/rust-course/advance/concurrency-with-threads/sync2",
+                  "file": "/docs/rust-course/advance/concurrency-with-threads/sync2.md"
+                },
+                {
+                  "title": "基于 Send 和 Sync 的线程安全",
+                  "path": "/rust-course/advance/concurrency-with-threads/send-sync",
+                  "file": "/docs/rust-course/advance/concurrency-with-threads/send-sync.md"
+                }
+              ]
+            },
+            {
+              "title": "全局变量",
+              "path": "/rust-course/advance/global-variable",
+              "file": "/docs/rust-course/advance/global-variable.md"
+            },
+            {
+              "title": "错误处理",
+              "path": "/rust-course/advance/errors",
+              "file": "/docs/rust-course/advance/errors.md"
+            },
+            {
+              "title": "Unsafe Rust",
+              "path": "/rust-course/advance/unsafe/intro",
+              "file": "/docs/rust-course/advance/unsafe/intro.md",
+              "children": [
+                {
+                  "title": "五种兵器",
+                  "path": "/rust-course/advance/unsafe/superpowers",
+                  "file": "/docs/rust-course/advance/unsafe/superpowers.md"
+                },
+                {
+                  "title": "内联汇编",
+                  "path": "/rust-course/advance/unsafe/inline-asm",
+                  "file": "/docs/rust-course/advance/unsafe/inline-asm.md"
+                }
+              ]
+            },
+            {
+              "title": "Macro 宏编程",
+              "path": "/rust-course/advance/macro",
+              "file": "/docs/rust-course/advance/macro.md"
+            },
+            {
+              "title": "async/await 异步编程",
+              "path": "/rust-course/advance/async/intro",
+              "file": "/docs/rust-course/advance/async/intro.md",
+              "children": [
+                {
+                  "title": "async 编程入门",
+                  "path": "/rust-course/advance/async/getting-started",
+                  "file": "/docs/rust-course/advance/async/getting-started.md"
+                },
+                {
+                  "title": "底层探秘: Future 执行与任务调度",
+                  "path": "/rust-course/advance/async/future-excuting",
+                  "file": "/docs/rust-course/advance/async/future-excuting.md"
+                },
+                {
+                  "title": "定海神针 Pin 和 Unpin",
+                  "path": "/rust-course/advance/async/pin-unpin",
+                  "file": "/docs/rust-course/advance/async/pin-unpin.md"
+                },
+                {
+                  "title": "async/await 和 Stream 流处理",
+                  "path": "/rust-course/advance/async/async-await",
+                  "file": "/docs/rust-course/advance/async/async-await.md"
+                },
+                {
+                  "title": "同时运行多个 Future",
+                  "path": "/rust-course/advance/async/multi-futures-simultaneous",
+                  "file": "/docs/rust-course/advance/async/multi-futures-simultaneous.md"
+                },
+                {
+                  "title": "一些疑难问题的解决办法",
+                  "path": "/rust-course/advance/async/pain-points-and-workarounds",
+                  "file": "/docs/rust-course/advance/async/pain-points-and-workarounds.md"
+                },
+                {
+                  "title": "实践应用：Async Web 服务器",
+                  "path": "/rust-course/advance/async/web-server",
+                  "file": "/docs/rust-course/advance/async/web-server.md"
+                }
+              ]
+            }
+          ],
+          "file": "/docs/rust-course/advance/intro.md"
+        },
+        {
+          "title": "⚡ 第五部分：进阶实战1 - Web服务器",
+          "path": "/rust-course/advance-practice1/intro",
+          "file": "/docs/rust-course/advance-practice1/intro.md",
+          "items": [
+            {
+              "title": "单线程版本",
+              "path": "/rust-course/advance-practice1/web-server",
+              "file": "/docs/rust-course/advance-practice1/web-server.md"
+            },
+            {
+              "title": "多线程版本",
+              "path": "/rust-course/advance-practice1/multi-threads",
+              "file": "/docs/rust-course/advance-practice1/multi-threads.md"
+            },
+            {
+              "title": "优雅关闭和资源清理",
+              "path": "/rust-course/advance-practice1/graceful-shutdown",
+              "file": "/docs/rust-course/advance-practice1/graceful-shutdown.md"
+            }
+          ]
+        },
+        {
+          "title": "🔥 第六部分：进阶实战2 - 实现Redis",
+          "path": "/rust-course/advance-practice/intro",
+          "file": "/docs/rust-course/advance-practice/intro.md",
+          "items": [
+            {
+              "title": "tokio 概览",
+              "path": "/rust-course/advance-practice/overview",
+              "file": "/docs/rust-course/advance-practice/overview.md"
+            },
+            {
+              "title": "使用初印象",
+              "path": "/rust-course/advance-practice/getting-startted",
+              "file": "/docs/rust-course/advance-practice/getting-startted.md"
+            },
+            {
+              "title": "创建异步任务",
+              "path": "/rust-course/advance-practice/spawning",
+              "file": "/docs/rust-course/advance-practice/spawning.md"
+            },
+            {
+              "title": "共享状态",
+              "path": "/rust-course/advance-practice/shared-state",
+              "file": "/docs/rust-course/advance-practice/shared-state.md"
+            },
+            {
+              "title": "消息传递",
+              "path": "/rust-course/advance-practice/channels",
+              "file": "/docs/rust-course/advance-practice/channels.md"
+            },
+            {
+              "title": "I/O",
+              "path": "/rust-course/advance-practice/io",
+              "file": "/docs/rust-course/advance-practice/io.md"
+            },
+            {
+              "title": "解析数据帧",
+              "path": "/rust-course/advance-practice/frame",
+              "file": "/docs/rust-course/advance-practice/frame.md"
+            },
+            {
+              "title": "深入 async",
+              "path": "/rust-course/advance-practice/async",
+              "file": "/docs/rust-course/advance-practice/async.md"
+            },
+            {
+              "title": "select",
+              "path": "/rust-course/advance-practice/select",
+              "file": "/docs/rust-course/advance-practice/select.md"
+            },
+            {
+              "title": "类似迭代器的 Stream",
+              "path": "/rust-course/advance-practice/stream",
+              "file": "/docs/rust-course/advance-practice/stream.md"
+            },
+            {
+              "title": "优雅的关闭",
+              "path": "/rust-course/advance-practice/graceful-shutdown",
+              "file": "/docs/rust-course/advance-practice/graceful-shutdown.md"
+            },
+            {
+              "title": "异步跟同步共存",
+              "path": "/rust-course/advance-practice/bridging-with-sync",
+              "file": "/docs/rust-course/advance-practice/bridging-with-sync.md"
+            }
+          ]
+        },
+        {
+          "title": "🎯 Rust 难点攻关",
+          "path": "/rust-course/difficulties/intro",
+          "file": "/docs/rust-course/difficulties/intro.md",
+          "items": [
+            {
+              "title": "切片和切片引用",
+              "path": "/rust-course/difficulties/slice",
+              "file": "/docs/rust-course/difficulties/slice.md"
+            },
+            {
+              "title": "Eq 和 PartialEq",
+              "path": "/rust-course/difficulties/eq",
+              "file": "/docs/rust-course/difficulties/eq.md"
+            }
+          ]
+        },
+        {
+          "title": "🛠️ 常用工具链",
+          "path": "/rust-course/test/intro",
+          "file": "/docs/rust-course/test/intro.md",
+          "items": [
+            {
+              "title": "自动化测试",
+              "path": "/rust-course/test/intro",
+              "file": "/docs/rust-course/test/intro.md",
+              "children": [
+                {
+                  "title": "编写测试及控制执行",
+                  "path": "/rust-course/test/write-tests",
+                  "file": "/docs/rust-course/test/write-tests.md"
+                },
+                {
+                  "title": "单元测试和集成测试",
+                  "path": "/rust-course/test/unit-integration-test",
+                  "file": "/docs/rust-course/test/unit-integration-test.md"
+                },
+                {
+                  "title": "断言 assertion",
+                  "path": "/rust-course/test/assertion",
+                  "file": "/docs/rust-course/test/assertion.md"
+                },
+                {
+                  "title": "用 GitHub Actions 进行持续集成",
+                  "path": "/rust-course/test/ci",
+                  "file": "/docs/rust-course/test/ci.md"
+                },
+                {
+                  "title": "基准测试 benchmark",
+                  "path": "/rust-course/test/benchmark",
+                  "file": "/docs/rust-course/test/benchmark.md"
+                }
+              ]
+            },
+            {
+              "title": "Cargo 使用指南",
+              "path": "/rust-course/cargo/intro",
+              "file": "/docs/rust-course/cargo/intro.md",
+              "children": [
+                {
+                  "title": "上手使用",
+                  "path": "/rust-course/cargo/getting-started",
+                  "file": "/docs/rust-course/cargo/getting-started.md"
+                },
+                {
+                  "title": "基础指南",
+                  "path": "/rust-course/cargo/guide/intro",
+                  "file": "/docs/rust-course/cargo/guide/intro.md"
+                },
+                {
+                  "title": "进阶指南",
+                  "path": "/rust-course/cargo/reference/intro",
+                  "file": "/docs/rust-course/cargo/reference/intro.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "💼 开发实践",
+          "path": "/rust-course/usecases/intro",
+          "file": "/docs/rust-course/usecases/intro.md",
+          "items": [
+            {
+              "title": "企业落地实践",
+              "path": "/rust-course/usecases/intro",
+              "file": "/docs/rust-course/usecases/intro.md",
+              "children": [
+                {
+                  "title": "AWS 为何这么喜欢 Rust?",
+                  "path": "/rust-course/usecases/aws-rust",
+                  "file": "/docs/rust-course/usecases/aws-rust.md"
+                }
+              ]
+            },
+            {
+              "title": "日志和监控",
+              "path": "/rust-course/logs/intro",
+              "file": "/docs/rust-course/logs/intro.md",
+              "children": [
+                {
+                  "title": "日志详解",
+                  "path": "/rust-course/logs/about-log",
+                  "file": "/docs/rust-course/logs/about-log.md"
+                },
+                {
+                  "title": "日志门面 log",
+                  "path": "/rust-course/logs/log",
+                  "file": "/docs/rust-course/logs/log.md"
+                },
+                {
+                  "title": "使用 tracing 记录日志",
+                  "path": "/rust-course/logs/tracing",
+                  "file": "/docs/rust-course/logs/tracing.md"
+                },
+                {
+                  "title": "自定义 tracing 的输出格式",
+                  "path": "/rust-course/logs/tracing-logger",
+                  "file": "/docs/rust-course/logs/tracing-logger.md"
+                }
+              ]
+            },
+            {
+              "title": "Rust 最佳实践",
+              "path": "/rust-course/practice/intro",
+              "file": "/docs/rust-course/practice/intro.md",
+              "children": [
+                {
+                  "title": "日常开发三方库精选",
+                  "path": "/rust-course/practice/third-party-libs",
+                  "file": "/docs/rust-course/practice/third-party-libs.md"
+                },
+                {
+                  "title": "命名规范",
+                  "path": "/rust-course/practice/naming",
+                  "file": "/docs/rust-course/practice/naming.md"
+                },
+                {
+                  "title": "面试经验",
+                  "path": "/rust-course/practice/interview",
+                  "file": "/docs/rust-course/practice/interview.md"
+                }
+              ]
+            },
+            {
+              "title": "手把手带你实现链表",
+              "path": "/rust-course/too-many-lists/intro",
+              "file": "/docs/rust-course/too-many-lists/intro.md",
+              "children": [
+                {
+                  "title": "我们到底需不需要链表",
+                  "path": "/rust-course/too-many-lists/do-we-need-it",
+                  "file": "/docs/rust-course/too-many-lists/do-we-need-it.md"
+                },
+                {
+                  "title": "不太优秀的单向链表：栈",
+                  "path": "/rust-course/too-many-lists/bad-stack/intro",
+                  "file": "/docs/rust-course/too-many-lists/bad-stack/intro.md"
+                },
+                {
+                  "title": "还可以的单向链表",
+                  "path": "/rust-course/too-many-lists/ok-stack/intro",
+                  "file": "/docs/rust-course/too-many-lists/ok-stack/intro.md"
+                },
+                {
+                  "title": "持久化单向链表",
+                  "path": "/rust-course/too-many-lists/persistent-stack/intro",
+                  "file": "/docs/rust-course/too-many-lists/persistent-stack/intro.md"
+                },
+                {
+                  "title": "不咋样的双端队列",
+                  "path": "/rust-course/too-many-lists/deque/intro",
+                  "file": "/docs/rust-course/too-many-lists/deque/intro.md"
+                },
+                {
+                  "title": "不错的 unsafe 队列",
+                  "path": "/rust-course/too-many-lists/unsafe-queue/intro",
+                  "file": "/docs/rust-course/too-many-lists/unsafe-queue/intro.md"
+                },
+                {
+                  "title": "生产级的双向 unsafe 队列",
+                  "path": "/rust-course/too-many-lists/production-unsafe-deque/intro",
+                  "file": "/docs/rust-course/too-many-lists/production-unsafe-deque/intro.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "🔨 攻克编译错误",
+          "path": "/rust-course/compiler/intro",
+          "file": "/docs/rust-course/compiler/intro.md",
+          "items": [
+            {
+              "title": "对抗编译检查",
+              "path": "/rust-course/compiler/fight-with-compiler/intro",
+              "file": "/docs/rust-course/compiler/fight-with-compiler/intro.md",
+              "children": [
+                {
+                  "title": "生命周期",
+                  "path": "/rust-course/compiler/fight-with-compiler/lifetime/intro",
+                  "file": "/docs/rust-course/compiler/fight-with-compiler/lifetime/intro.md",
+                  "children": [
+                    {
+                      "title": "生命周期过长",
+                      "path": "/rust-course/compiler/fight-with-compiler/lifetime/too-long1",
+                      "file": "/docs/rust-course/compiler/fight-with-compiler/lifetime/too-long1.md"
+                    },
+                    {
+                      "title": "生命周期过长 Part2",
+                      "path": "/rust-course/compiler/fight-with-compiler/lifetime/too-long2",
+                      "file": "/docs/rust-course/compiler/fight-with-compiler/lifetime/too-long2.md"
+                    },
+                    {
+                      "title": "循环中的生命周期",
+                      "path": "/rust-course/compiler/fight-with-compiler/lifetime/loop",
+                      "file": "/docs/rust-course/compiler/fight-with-compiler/lifetime/loop.md"
+                    },
+                    {
+                      "title": "闭包函数的消除规则",
+                      "path": "/rust-course/compiler/fight-with-compiler/lifetime/closure-with-static",
+                      "file": "/docs/rust-course/compiler/fight-with-compiler/lifetime/closure-with-static.md"
+                    }
+                  ]
+                },
+                {
+                  "title": "重复借用",
+                  "path": "/rust-course/compiler/fight-with-compiler/borrowing/intro",
+                  "file": "/docs/rust-course/compiler/fight-with-compiler/borrowing/intro.md",
+                  "children": [
+                    {
+                      "title": "结构体中的字段借用",
+                      "path": "/rust-course/compiler/fight-with-compiler/borrowing/borrow-distinct-fields-of-struct",
+                      "file": "/docs/rust-course/compiler/fight-with-compiler/borrowing/borrow-distinct-fields-of-struct.md"
+                    },
+                    {
+                      "title": "引用在函数返回后存在",
+                      "path": "/rust-course/compiler/fight-with-compiler/borrowing/ref-exist-in-out-fn",
+                      "file": "/docs/rust-course/compiler/fight-with-compiler/borrowing/ref-exist-in-out-fn.md"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Rust 常见陷阱",
+              "path": "/rust-course/compiler/pitfalls/index",
+              "file": "/docs/rust-course/compiler/pitfalls/index.md",
+              "children": [
+                {
+                  "title": "for 循环中使用外部数组",
+                  "path": "/rust-course/compiler/pitfalls/use-vec-in-for",
+                  "file": "/docs/rust-course/compiler/pitfalls/use-vec-in-for.md"
+                },
+                {
+                  "title": "线程类型导致的栈溢出",
+                  "path": "/rust-course/compiler/pitfalls/stack-overflow",
+                  "file": "/docs/rust-course/compiler/pitfalls/stack-overflow.md"
+                },
+                {
+                  "title": "算术溢出导致的 panic",
+                  "path": "/rust-course/compiler/pitfalls/arithmetic-overflow",
+                  "file": "/docs/rust-course/compiler/pitfalls/arithmetic-overflow.md"
+                },
+                {
+                  "title": "闭包中奇怪的生命周期",
+                  "path": "/rust-course/compiler/pitfalls/closure-with-lifetime",
+                  "file": "/docs/rust-course/compiler/pitfalls/closure-with-lifetime.md"
+                },
+                {
+                  "title": "可变变量不可变？",
+                  "path": "/rust-course/compiler/pitfalls/the-disabled-mutability",
+                  "file": "/docs/rust-course/compiler/pitfalls/the-disabled-mutability.md"
+                },
+                {
+                  "title": "可变借用失败引发的深入思考",
+                  "path": "/rust-course/compiler/pitfalls/multiple-mutable-references",
+                  "file": "/docs/rust-course/compiler/pitfalls/multiple-mutable-references.md"
+                },
+                {
+                  "title": "不太勤快的迭代器",
+                  "path": "/rust-course/compiler/pitfalls/lazy-iterators",
+                  "file": "/docs/rust-course/compiler/pitfalls/lazy-iterators.md"
+                },
+                {
+                  "title": "奇怪的序列 x..y",
+                  "path": "/rust-course/compiler/pitfalls/weird-ranges",
+                  "file": "/docs/rust-course/compiler/pitfalls/weird-ranges.md"
+                },
+                {
+                  "title": "无处不在的迭代器",
+                  "path": "/rust-course/compiler/pitfalls/iterator-everywhere",
+                  "file": "/docs/rust-course/compiler/pitfalls/iterator-everywhere.md"
+                },
+                {
+                  "title": "线程间传递消息导致主线程无法结束",
+                  "path": "/rust-course/compiler/pitfalls/main-with-channel-blocked",
+                  "file": "/docs/rust-course/compiler/pitfalls/main-with-channel-blocked.md"
+                },
+                {
+                  "title": "警惕 UTF-8 引发的性能隐患",
+                  "path": "/rust-course/compiler/pitfalls/utf8-performance",
+                  "file": "/docs/rust-course/compiler/pitfalls/utf8-performance.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "⚡ 性能优化",
+          "path": "/rust-course/profiling/intro",
+          "file": "/docs/rust-course/profiling/intro.md",
+          "items": [
+            {
+              "title": "深入内存",
+              "path": "/rust-course/profiling/memory/intro",
+              "file": "/docs/rust-course/profiling/memory/intro.md"
+            },
+            {
+              "title": "性能调优",
+              "path": "/rust-course/profiling/performance/intro",
+              "file": "/docs/rust-course/profiling/performance/intro.md",
+              "children": [
+                {
+                  "title": "字符串操作性能",
+                  "path": "/rust-course/profiling/performance/string",
+                  "file": "/docs/rust-course/profiling/performance/string.md"
+                },
+                {
+                  "title": "深入理解 move",
+                  "path": "/rust-course/profiling/performance/deep-into-move",
+                  "file": "/docs/rust-course/profiling/performance/deep-into-move.md"
+                }
+              ]
+            },
+            {
+              "title": "编译优化",
+              "path": "/rust-course/profiling/compiler/intro",
+              "file": "/docs/rust-course/profiling/compiler/intro.md"
+            }
+          ]
+        },
+        {
+          "title": "📖 附录",
+          "path": "/rust-course/appendix/intro",
+          "file": "/docs/rust-course/appendix/intro.md",
+          "items": [
+            {
+              "title": "关键字",
+              "path": "/rust-course/appendix/keywords",
+              "file": "/docs/rust-course/appendix/keywords.md"
+            },
+            {
+              "title": "运算符与符号",
+              "path": "/rust-course/appendix/operators",
+              "file": "/docs/rust-course/appendix/operators.md"
+            },
+            {
+              "title": "表达式",
+              "path": "/rust-course/appendix/expressions",
+              "file": "/docs/rust-course/appendix/expressions.md"
+            },
+            {
+              "title": "派生特征 trait",
+              "path": "/rust-course/appendix/derive",
+              "file": "/docs/rust-course/appendix/derive.md"
+            },
+            {
+              "title": "Rust 版本说明",
+              "path": "/rust-course/appendix/rust-version",
+              "file": "/docs/rust-course/appendix/rust-version.md"
+            },
+            {
+              "title": "Rust 历次版本更新解读",
+              "path": "/rust-course/appendix/rust-versions/intro",
+              "file": "/docs/rust-course/appendix/rust-versions/intro.md",
+              "children": [
+                {
+                  "title": "1.58",
+                  "path": "/rust-course/appendix/rust-versions/1.58",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.58.md"
+                },
+                {
+                  "title": "1.59",
+                  "path": "/rust-course/appendix/rust-versions/1.59",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.59.md"
+                },
+                {
+                  "title": "1.60",
+                  "path": "/rust-course/appendix/rust-versions/1.60",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.60.md"
+                },
+                {
+                  "title": "1.61",
+                  "path": "/rust-course/appendix/rust-versions/1.61",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.61.md"
+                },
+                {
+                  "title": "1.62",
+                  "path": "/rust-course/appendix/rust-versions/1.62",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.62.md"
+                },
+                {
+                  "title": "1.63",
+                  "path": "/rust-course/appendix/rust-versions/1.63",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.63.md"
+                },
+                {
+                  "title": "1.64",
+                  "path": "/rust-course/appendix/rust-versions/1.64",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.64.md"
+                },
+                {
+                  "title": "1.65",
+                  "path": "/rust-course/appendix/rust-versions/1.65",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.65.md"
+                },
+                {
+                  "title": "1.66",
+                  "path": "/rust-course/appendix/rust-versions/1.66",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.66.md"
+                },
+                {
+                  "title": "1.67",
+                  "path": "/rust-course/appendix/rust-versions/1.67",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.67.md"
+                },
+                {
+                  "title": "1.68",
+                  "path": "/rust-course/appendix/rust-versions/1.68",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.68.md"
+                },
+                {
+                  "title": "1.69",
+                  "path": "/rust-course/appendix/rust-versions/1.69",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.69.md"
+                },
+                {
+                  "title": "1.70",
+                  "path": "/rust-course/appendix/rust-versions/1.70",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.70.md"
+                },
+                {
+                  "title": "1.71",
+                  "path": "/rust-course/appendix/rust-versions/1.71",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.71.md"
+                },
+                {
+                  "title": "1.72",
+                  "path": "/rust-course/appendix/rust-versions/1.72",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.72.md"
+                },
+                {
+                  "title": "1.73",
+                  "path": "/rust-course/appendix/rust-versions/1.73",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.73.md"
+                },
+                {
+                  "title": "1.74",
+                  "path": "/rust-course/appendix/rust-versions/1.74",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.74.md"
+                },
+                {
+                  "title": "1.75",
+                  "path": "/rust-course/appendix/rust-versions/1.75",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.75.md"
+                },
+                {
+                  "title": "1.76",
+                  "path": "/rust-course/appendix/rust-versions/1.76",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.76.md"
+                },
+                {
+                  "title": "1.77",
+                  "path": "/rust-course/appendix/rust-versions/1.77",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.77.md"
+                },
+                {
+                  "title": "1.78",
+                  "path": "/rust-course/appendix/rust-versions/1.78",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.78.md"
+                },
+                {
+                  "title": "1.79",
+                  "path": "/rust-course/appendix/rust-versions/1.79",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.79.md"
+                },
+                {
+                  "title": "1.80",
+                  "path": "/rust-course/appendix/rust-versions/1.80",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.80.md"
+                },
+                {
+                  "title": "1.81",
+                  "path": "/rust-course/appendix/rust-versions/1.81",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.81.md"
+                },
+                {
+                  "title": "1.82",
+                  "path": "/rust-course/appendix/rust-versions/1.82",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.82.md"
+                },
+                {
+                  "title": "1.83",
+                  "path": "/rust-course/appendix/rust-versions/1.83",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.83.md"
+                },
+                {
+                  "title": "1.84",
+                  "path": "/rust-course/appendix/rust-versions/1.84",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.84.md"
+                },
+                {
+                  "title": "1.85",
+                  "path": "/rust-course/appendix/rust-versions/1.85",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.85.md"
+                },
+                {
+                  "title": "1.86",
+                  "path": "/rust-course/appendix/rust-versions/1.86",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.86.md"
+                },
+                {
+                  "title": "1.87",
+                  "path": "/rust-course/appendix/rust-versions/1.87",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.87.md"
+                },
+                {
+                  "title": "1.88",
+                  "path": "/rust-course/appendix/rust-versions/1.88",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.88.md"
+                },
+                {
+                  "title": "1.89",
+                  "path": "/rust-course/appendix/rust-versions/1.89",
+                  "file": "/docs/rust-course/appendix/rust-versions/1.89.md"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
