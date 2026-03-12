@@ -1,9 +1,5 @@
 书籍正在创作中，先定期跟大家分享些优秀的 AI 内容
 
-test2222
-
-test111
-
 ---
 #### 2026年3月
 - [百万级代码背后的零人工奇迹](https://openai.com/zh-Hans-CN/index/harness-engineering/) OpenAI过去五个月做了一项真实的实验：构建一个百万代码的生产级项目，其中没有一行使用人工编写，非常推荐！
