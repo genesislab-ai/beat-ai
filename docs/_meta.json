@@ -26,6 +26,28 @@
       "description": "Rust 编程语言完整学习指南",
       "sections": [
         {
+          "title": "📖 序言",
+          "path": "/rust-course/about-book",
+          "file": "/docs/rust-course/about-book.md",
+          "items": [
+            {
+              "title": "关于本书",
+              "path": "/rust-course/about-book",
+              "file": "/docs/rust-course/about-book.md"
+            },
+            {
+              "title": "进入Rust编程世界",
+              "path": "/rust-course/into-rust",
+              "file": "/docs/rust-course/into-rust.md"
+            },
+            {
+              "title": "避免从入门到放弃",
+              "path": "/rust-course/first-try/sth-you-should-not-do",
+              "file": "/docs/rust-course/first-try/sth-you-should-not-do.md"
+            }
+          ]
+        },
+        {
           "title": "🔧 第一部分：寻找牛刀",
           "path": "/rust-course/first-try/intro",
           "file": "/docs/rust-course/first-try/intro.md",
