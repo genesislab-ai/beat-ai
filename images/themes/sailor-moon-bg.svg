@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffc0e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fff5e6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e6f7ff;stop-opacity:1" />
+    </linearGradient>
+
+    <radialGradient id="moon-gradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fff9e6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffd700;stop-opacity:0.8" />
+    </radialGradient>
+
+    <radialGradient id="star-gradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffd700;stop-opacity:0.6" />
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1920" height="1080" fill="url(#bg-gradient)"/>
+
+  <!-- 月亮 -->
+  <circle cx="1600" cy="200" r="120" fill="url(#moon-gradient)" opacity="0.8"/>
+  <ellipse cx="1600" cy="200" rx="110" ry="115" fill="none" stroke="#ffd700" stroke-width="3" opacity="0.6"/>
+
+  <!-- 装饰星星 -->
+  <g opacity="0.7">
+    <!-- 大星星 -->
+    <g transform="translate(300, 150)">
+      <path d="M 0,-40 L 10,-10 L 40,0 L 10,10 L 0,40 L -10,10 L -40,0 L -10,-10 Z" fill="url(#star-gradient)"/>
+      <circle cx="0" cy="0" r="8" fill="#ffffff"/>
+    </g>
+
+    <g transform="translate(800, 300)">
+      <path d="M 0,-30 L 8,-8 L 30,0 L 8,8 L 0,30 L -8,8 L -30,0 L -8,-8 Z" fill="url(#star-gradient)"/>
+      <circle cx="0" cy="0" r="6" fill="#ffffff"/>
+    </g>
+
+    <g transform="translate(1200, 700)">
+      <path d="M 0,-35 L 9,-9 L 35,0 L 9,9 L 0,35 L -9,9 L -35,0 L -9,-9 Z" fill="url(#star-gradient)"/>
+      <circle cx="0" cy="0" r="7" fill="#ffffff"/>
+    </g>
+
+    <!-- 小星星 -->
+    <circle cx="200" cy="400" r="4" fill="#ffd700" opacity="0.8"/>
+    <circle cx="500" cy="600" r="3" fill="#ff69b4" opacity="0.8"/>
+    <circle cx="1000" cy="200" r="5" fill="#87ceeb" opacity="0.8"/>
+    <circle cx="1400" cy="500" r="4" fill="#ffd700" opacity="0.8"/>
+    <circle cx="400" cy="800" r="3" fill="#ff69b4" opacity="0.8"/>
+    <circle cx="900" cy="900" r="4" fill="#87ceeb" opacity="0.8"/>
+    <circle cx="1300" cy="850" r="3" fill="#ffd700" opacity="0.8"/>
+  </g>
+
+  <!-- 装饰性月牙和心形 -->
+  <g opacity="0.5">
+    <!-- 月牙 -->
+    <path d="M 100,600 Q 80,550 100,500 Q 120,550 100,600 Z" fill="#ffd700" opacity="0.6"/>
+    <path d="M 1700,800 Q 1680,750 1700,700 Q 1720,750 1700,800 Z" fill="#ff69b4" opacity="0.6"/>
+
+    <!-- 心形 -->
+    <path d="M 1800,400 C 1800,380 1785,365 1765,365 C 1750,365 1738,375 1733,388 C 1728,375 1716,365 1701,365 C 1681,365 1666,380 1666,400 C 1666,425 1733,465 1733,465 C 1733,465 1800,425 1800,400 Z" fill="#ff69b4" opacity="0.7"/>
+
+    <path d="M 300,900 C 300,885 288,873 273,873 C 260,873 250,881 246,892 C 242,881 232,873 219,873 C 204,873 192,885 192,900 C 192,920 246,955 246,955 C 246,955 300,920 300,900 Z" fill="#87ceeb" opacity="0.7"/>
+  </g>
+
+  <!-- 丝带飘带效果 -->
+  <g opacity="0.4">
+    <path d="M 100,100 Q 200,120 300,100 T 500,100" stroke="#ff69b4" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M 100,110 Q 200,130 300,110 T 500,110" stroke="#ffd700" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+    <path d="M 1400,950 Q 1500,930 1600,950 T 1800,950" stroke="#87ceeb" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M 1400,960 Q 1500,940 1600,960 T 1800,960" stroke="#ff69b4" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- 魔法光圈 -->
+  <g opacity="0.3">
+    <circle cx="960" cy="540" r="300" fill="none" stroke="#ffd700" stroke-width="2" stroke-dasharray="10,10"/>
+    <circle cx="960" cy="540" r="320" fill="none" stroke="#ff69b4" stroke-width="2" stroke-dasharray="15,15"/>
+    <circle cx="960" cy="540" r="340" fill="none" stroke="#87ceeb" stroke-width="2" stroke-dasharray="20,20"/>
+  </g>
+
+  <!-- 文字区域标记（占位，方便您替换） -->
+  <text x="960" y="540" font-family="Arial, sans-serif" font-size="48" fill="#ff69b4" opacity="0.3" text-anchor="middle">
+    Sailor Moon Theme
+  </text>
+  <text x="960" y="600" font-family="Arial, sans-serif" font-size="24" fill="#666" opacity="0.4" text-anchor="middle">
+    请替换此SVG为真实的美少女战士图片
+  </text>
+</svg>

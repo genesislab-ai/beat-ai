@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sailor Moon Theme Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #ff69b4;
+            text-align: center;
+        }
+
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .test-box {
+            width: 100%;
+            height: 400px;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            margin: 20px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bg-test-1 {
+            background-image: url('../src/assets/images/themes/sailor-moon-bg.svg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bg-test-2 {
+            background-image: url('/static/media/sailor-moon-bg.svg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bg-test-3 {
+            background: linear-gradient(135deg, #ff69b4 0%, #ffd700 50%, #87ceeb 100%);
+        }
+
+        .info {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🌙 Sailor Moon Theme Background Test</h1>
+
+        <div class="status success">
+            <strong>✅ 测试页面已加载</strong>
+        </div>
+
+        <div class="test-section">
+            <h2>测试 1: 相对路径（相对于 public）</h2>
+            <p>路径: <code>../src/assets/images/themes/sailor-moon-bg.svg</code></p>
+            <div class="test-box bg-test-1">
+                <div class="info">如果看到背景图，说明路径正确</div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>测试 2: Webpack 编译后的路径</h2>
+            <p>路径: <code>/static/media/sailor-moon-bg.svg</code></p>
+            <div class="test-box bg-test-2">
+                <div class="info">Webpack 处理后的路径</div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>测试 3: 渐变背景（对照组）</h2>
+            <p>这个应该始终可见</p>
+            <div class="test-box bg-test-3">
+                <div class="info">粉-金-蓝渐变</div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>📋 检查清单</h2>
+            <ol>
+                <li>打开浏览器开发者工具（F12）</li>
+                <li>切换到 Console 标签页</li>
+                <li>查看是否有 404 错误（图片加载失败）</li>
+                <li>切换到 Network 标签页</li>
+                <li>刷新页面（Ctrl+Shift+R）</li>
+                <li>查找 sailor-moon-bg.svg 的请求</li>
+                <li>检查请求状态（应该是 200）</li>
+            </ol>
+        </div>
+
+        <div class="test-section">
+            <h2>🔍 调试信息</h2>
+            <div id="debug-info"></div>
+        </div>
+    </div>
+
+    <script>
+        // 显示调试信息
+        const debugInfo = document.getElementById('debug-info');
+        const info = {
+            'Current URL': window.location.href,
+            'Base URL': window.location.origin,
+            'Protocol': window.location.protocol,
+            'Hostname': window.location.hostname,
+            'Port': window.location.port,
+            'User Agent': navigator.userAgent.substring(0, 100) + '...'
+        };
+
+        let html = '<table style="width:100%; border-collapse: collapse;">';
+        for (const [key, value] of Object.entries(info)) {
+            html += `<tr style="border-bottom: 1px solid #ddd;">
+                <td style="padding: 10px; font-weight: bold; width: 200px;">${key}</td>
+                <td style="padding: 10px;"><code>${value}</code></td>
+            </tr>`;
+        }
+        html += '</table>';
+        debugInfo.innerHTML = html;
+
+        // 测试图片加载
+        const testImage = new Image();
+        testImage.onload = () => {
+            console.log('✅ 图片加载成功！');
+            const status = document.createElement('div');
+            status.className = 'status success';
+            status.innerHTML = '<strong>✅ 背景图片加载成功</strong>';
+            document.querySelector('.test-container').insertBefore(status, document.querySelector('.test-container').children[1]);
+        };
+        testImage.onerror = () => {
+            console.error('❌ 图片加载失败！');
+            const status = document.createElement('div');
+            status.className = 'status error';
+            status.innerHTML = '<strong>❌ 背景图片加载失败</strong><br>请检查文件路径和开发服务器';
+            document.querySelector('.test-container').insertBefore(status, document.querySelector('.test-container').children[1]);
+        };
+        testImage.src = '../src/assets/images/themes/sailor-moon-bg.svg';
+    </script>
+</body>
+</html>
