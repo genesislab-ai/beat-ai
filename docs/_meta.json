@@ -10,18 +10,42 @@
       "sections": [
         {
           "title": "2026 年 2 月",
-          "path": "/ai-insights/viewpoint/2026-02",
+          "path": "/ai-insights/viewpoint/2025-11",
           "items": [
             {
-              "title": "AI Agent 正在吃掉软件世界",
-              "path": "/ai-insights/viewpoint/ai-agent-revolution",
-              "file": "/docs/ai-insights/viewpoint/ai-agent-revolution.md",
+              "title": "是什么让 Claude Code 如此出色（以及如何在你的智能体中重现这种魔力）!?",
+              "path": "/ai-insights/viewpoint/why-claude-code-is-so-good",
+              "file": "/docs/ai-insights/viewpoint/why-claude-code-is-so-good.md",
               "tags": [
                 "AI",
+                "Claude Code",
+                "小模型",
                 "Agent",
-                "软件革命",
-                "自动化",
-                "未来趋势"
+                "工具设计"
+              ]
+            },
+            {
+              "title": "从写代码到验代码：AI 搭档写走 3 年，我踩出来的协作路线图",
+              "path": "/ai-insights/viewpoint/from-writing-code-to-validating-code",
+              "file": "/docs/ai-insights/viewpoint/from-writing-code-to-validating-code.md",
+              "tags": [
+                "AI",
+                "AI Coding",
+                "代码验证",
+                "工程实践",
+                "上下文工程"
+              ]
+            },
+            {
+              "title": "微软中国 CTO 韦青：警惕朋友圈 AI 神话，重视苦活、脏活、累活",
+              "path": "/ai-insights/viewpoint/weiching-ai-reform",
+              "file": "/docs/ai-insights/viewpoint/weiching-ai-reform.md",
+              "tags": [
+                "AI",
+                "企业转型",
+                "微软",
+                "组织变革",
+                "数字化"
               ]
             }
           ]
@@ -43,15 +67,15 @@
               ]
             },
             {
-              "title": "微软中国 CTO 韦青：警惕朋友圈 AI 神话，重视苦活、脏活、累活",
-              "path": "/ai-insights/viewpoint/weiching-ai-reform",
-              "file": "/docs/ai-insights/viewpoint/weiching-ai-reform.md",
+              "title": "百万级代码背后的零人工奇迹",
+              "path": "/ai-insights/viewpoint/harness-engineering",
+              "file": "/docs/ai-insights/viewpoint/harness-engineering.md",
               "tags": [
                 "AI",
-                "企业转型",
-                "微软",
-                "组织变革",
-                "数字化"
+                "Codex",
+                "软件工程",
+                "Agent",
+                "开发效率"
               ]
             }
           ]
