@@ -1,0 +1,151 @@
+{
+  "id": "ai-insights",
+  "title": "AI每日视点",
+  "description": "AI 领域最新动态、技术分享与深度解析",
+  "githubRepo": "https://github.com/beatai-org/beatai",
+  "repoTitle": "繁星点点，只因有你",
+  "sections": [
+    {
+      "title": "2026 年 2 月",
+      "path": "/ai-insights/viewpoint/2025-11",
+      "items": [
+        {
+          "title": "是什么让 Claude Code 如此出色（以及如何在你的智能体中重现这种魔力）!?",
+          "path": "/ai-insights/viewpoint/why-claude-code-is-so-good",
+          "file": "/docs/ai-insights/viewpoint/why-claude-code-is-so-good.md",
+          "publishedAt": "2026-02-27",
+          "tags": [
+            "AI",
+            "Claude Code",
+            "小模型",
+            "Agent",
+            "工具设计"
+          ]
+        },
+        {
+          "title": "从写代码到验代码：AI 搭档写走 3 年，我踩出来的协作路线图",
+          "path": "/ai-insights/viewpoint/from-writing-code-to-validating-code",
+          "file": "/docs/ai-insights/viewpoint/from-writing-code-to-validating-code.md",
+          "publishedAt": "2026-02-17",
+          "tags": [
+            "AI",
+            "AI Coding",
+            "代码验证",
+            "工程实践",
+            "上下文工程"
+          ]
+        },
+        {
+          "title": "2028全球智能危机",
+          "path": "/ai-insights/viewpoint/2028-global-intelligence-crisis",
+          "file": "/docs/ai-insights/viewpoint/2028-global-intelligence-crisis.md",
+          "publishedAt": "2026-02-18",
+          "tags": [
+            "AI",
+            "宏观经济",
+            "白领替代",
+            "系统性风险",
+            "按揭市场"
+          ]
+        },
+        {
+          "title": "微软中国 CTO 韦青：警惕朋友圈 AI 神话，重视苦活、脏活、累活",
+          "path": "/ai-insights/viewpoint/weiching-ai-reform",
+          "file": "/docs/ai-insights/viewpoint/weiching-ai-reform.md",
+          "publishedAt": "2026-03-17",
+          "tags": [
+            "AI",
+            "企业转型",
+            "微软",
+            "组织变革",
+            "数字化"
+          ]
+        },
+        {
+          "title": "用 AI 反向工程 1986 年的游戏",
+          "path": "/ai-insights/viewpoint/ai-reverse-engineered-bubble-bobble",
+          "file": "/docs/ai-insights/viewpoint/ai-reverse-engineered-bubble-bobble.md",
+          "publishedAt": "2026-02-18",
+          "tags": [
+            "AI",
+            "逆向工程",
+            "二进制分析",
+            "游戏",
+            "软件安全"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2026 年 3 月",
+      "path": "/ai-insights/viewpoint/2026-03",
+      "items": [
+        {
+          "title": "Vibe Coding，是怎么「玩废」程序员的？",
+          "path": "/ai-insights/viewpoint/vibe-coding",
+          "file": "/docs/ai-insights/viewpoint/vibe-coding.md",
+          "publishedAt": "2026-03-17",
+          "tags": [
+            "AI",
+            "编程",
+            "Vibe Coding",
+            "程序员",
+            "认知科学"
+          ]
+        },
+        {
+          "title": "百万级代码背后的零人工奇迹",
+          "path": "/ai-insights/viewpoint/harness-engineering",
+          "file": "/docs/ai-insights/viewpoint/harness-engineering.md",
+          "publishedAt": "2026-03-17",
+          "tags": [
+            "AI",
+            "Codex",
+            "软件工程",
+            "Agent",
+            "开发效率"
+          ]
+        },
+        {
+          "title": "从 Google ADK 到 OpenFang，我试了七个 Agent 框架，最后被一个教程点醒了",
+          "path": "/ai-insights/viewpoint/agent-framework-illusion",
+          "file": "/docs/ai-insights/viewpoint/agent-framework-illusion.md",
+          "publishedAt": "2026-03-18",
+          "tags": [
+            "AI",
+            "Agent",
+            "框架选择",
+            "Context Engineering",
+            "LLM"
+          ]
+        },
+        {
+          "title": "为什么大模型越用越上头？",
+          "path": "/ai-insights/viewpoint/why-llms-are-so-addictive",
+          "file": "/docs/ai-insights/viewpoint/why-llms-are-so-addictive.md",
+          "publishedAt": "2026-03-19",
+          "tags": [
+            "AI",
+            "大模型",
+            "认知偏差",
+            "情绪价值",
+            "人机协同"
+          ]
+        },
+        {
+          "title": "Claude code团队内部skill构建踩坑经验大全",
+          "path": "/ai-insights/viewpoint/claude-code-skills-pitfalls",
+          "file": "/docs/ai-insights/viewpoint/claude-code-skills-pitfalls.md",
+          "publishedAt": "2026-03-19",
+          "tags": [
+            "ClaudeCode",
+            "Skills",
+            "Agent",
+            "工程实践",
+            "工作流"
+          ]
+        }
+      ]
+    }
+  ]
+}
