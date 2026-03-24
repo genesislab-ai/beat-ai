@@ -81,6 +81,26 @@
       "path": "/ai-insights/viewpoint/2026-03",
       "items": [
         {
+          "title": "开源项目--1300 年前的唐朝制度，吊打了我用过的所有 AI 框架",
+          "path": "/ai-insights/viewpoint/tang-dynasty-beats-ai-frameworks",
+          "file": "/docs/ai-insights/viewpoint/tang-dynasty-beats-ai-frameworks.md",
+          "publishedAt": "2026-03-24",
+          "contributors": [
+            {
+              "role": "reviewer",
+              "name": "Sheldon Cooper",
+              "link": "https://baike.baidu.com/item/谢尔顿·库珀/9982394"
+            }
+          ],
+          "tags": [
+            "多Agent",
+            "审核机制",
+            "工作流",
+            "AI框架",
+            "制度设计"
+          ]
+        },
+        {
           "title": "模型不是关键，Harness 才是",
           "path": "/ai-insights/viewpoint/model-is-not-key-harness-is",
           "file": "/docs/ai-insights/viewpoint/model-is-not-key-harness-is.md",
