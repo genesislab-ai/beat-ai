@@ -617,7 +617,7 @@ let s: &'static str = "我没啥优点，就是活得久，嘿嘿";
 - 生命周期 `'static` 意味着能和程序活得一样久，例如字符串字面量和特征对象
 - 实在遇到解决不了的生命周期标注问题，可以尝试 `T: 'static`，有时候它会给你奇迹
 
-> 事实上，关于 `'static`, 有两种用法: `&'static` 和 `T: 'static`，详细内容请参见[此处](https://course.rs/advance/lifetime/static.html)。
+> 事实上，关于 `'static`, 有两种用法: `&'static` 和 `T: 'static`，详细内容请参见[此处](https://beatai.org/rust-course/advance/lifetime/static)。
 
 ## 一个复杂例子: 泛型、特征约束
 
@@ -647,7 +647,7 @@ where
 
 ## 课后练习
 
-> [Rust By Practice](https://practice-zh.course.rs/lifetime/basic.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/lifetime/basic.md)。
+> [Rust By Practice](https://practice-rust-zh.beatai.org/lifetime/basic.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/lifetime/basic.md)。
 
 ## 总结
 

@@ -7,7 +7,7 @@
 
 Rust 使用一个相对传统的语法来创建整数（`1`，`2`，...）和浮点数（`1.0`，`1.1`，...）。整数、浮点数的运算和你在其它语言上见过的一致，都是通过常见的运算符来完成。
 
-> 不仅仅是数值类型，Rust 也允许在复杂类型上定义运算符，例如在自定义类型上定义 `+` 运算符，这种行为被称为运算符重载，Rust 具体支持的可重载运算符见[附录 B](https://course.rs/appendix/operators.html#运算符)。
+> 不仅仅是数值类型，Rust 也允许在复杂类型上定义运算符，例如在自定义类型上定义 `+` 运算符，这种行为被称为运算符重载，Rust 具体支持的可重载运算符见[附录 B](https://beatai.org/rust-course/appendix/operators#运算符)。
 
 ## 整数类型
 
@@ -206,7 +206,7 @@ fn main() {
 }
 ```
 
-这些语句中的每个表达式都使用了数学运算符，并且计算结果为一个值，然后绑定到一个变量上。[附录 B](https://course.rs/appendix/operators.html#运算符) 中给出了 Rust 提供的所有运算符的列表。
+这些语句中的每个表达式都使用了数学运算符，并且计算结果为一个值，然后绑定到一个变量上。[附录 B](https://beatai.org/rust-course/appendix/operators#运算符) 中给出了 Rust 提供的所有运算符的列表。
 
 再来看一个综合性的示例：
 
@@ -376,7 +376,7 @@ use num::complex::Complex;
 
 ## 课后练习
 
-> [Rust By Practice](https://practice-zh.course.rs/basic-types/numbers.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/basic-types/numbers.md)。
+> [Rust By Practice](https://practice-rust-zh.beatai.org/basic-types/numbers.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/basic-types/numbers.md)。
 
 
 

@@ -22,8 +22,8 @@
 | :-------------: | :------: | :--------: |
 | [Cargo](#cargo) | [Naming] | [Keywords] |
 
-[naming]: https://course.rs/practice/naming.html
-[keywords]: https://course.rs/appendix/keywords.html
+[naming]: https://beatai.org/rust-course/practice/naming
+[keywords]: https://beatai.org/rust-course/appendix/keywords
 
 [bottom](#bottom)
 
@@ -43,19 +43,19 @@
 | `[::]`                            | 关联函数       | 定义在 `impl` 中且没有 `self` 的函数                                                 |
 |                                   |                |
 
-`[?]`: https://course.rs/basic/result-error/result.html#传播界的大明星-
-`[()]`: https://course.rs/basic/base-type/function.html#无返回值
-`[函数]`: https://course.rs/basic/base-type/function.html#永不返回的发散函数-
-`[类型]`: https://course.rs/advance/into-types/custom-type.html#永不返回类型
-`[&]`: https://course.rs/basic/ownership/borrowing.html#引用与解引用
-`[\*]`: https://course.rs/basic/ownership/borrowing.html#引用与解引用
-`[@]`: https://course.rs/basic/match-pattern/all-patterns.html#绑定
-`['a: 'b]`: https://course.rs/advance/lifetime/advance.html#生命周期约束-hrtb
-`[{:?}]`: https://course.rs/basic/compound-type/struct.html#使用-derivedebug-来打印结构体的信息
-`[忽略变量]`: https://course.rs/basic/variable.html#使用下划线开头忽略未使用的变量
-`[模式匹配]`: https://course.rs/basic/match-pattern/match-if-let.html#_-通配符
-`[::]`: https://course.rs/basic/method.html#关联函数
-`[格式化输出]`: https://course.rs/basic/formatted-output.html#-与-
+`[?]`: https://beatai.org/rust-course/basic/result-error/result#传播界的大明星-
+`[()]`: https://beatai.org/rust-course/basic/base-type/function#无返回值
+`[函数]`: https://beatai.org/rust-course/basic/base-type/function#永不返回的发散函数-
+`[类型]`: https://beatai.org/rust-course/advance/into-types/custom-type#永不返回类型
+`[&]`: https://beatai.org/rust-course/basic/ownership/borrowing#引用与解引用
+`[\*]`: https://beatai.org/rust-course/basic/ownership/borrowing#引用与解引用
+`[@]`: https://beatai.org/rust-course/basic/match-pattern/all-patterns#绑定
+`['a: 'b]`: https://beatai.org/rust-course/advance/lifetime/advance#生命周期约束-hrtb
+`[{:?}]`: https://beatai.org/rust-course/basic/compound-type/struct#使用-derivedebug-来打印结构体的信息
+`[忽略变量]`: https://beatai.org/rust-course/basic/variable#使用下划线开头忽略未使用的变量
+`[模式匹配]`: https://beatai.org/rust-course/basic/match-pattern/match-if-let#_-通配符
+`[::]`: https://beatai.org/rust-course/basic/method#关联函数
+`[格式化输出]`: https://beatai.org/rust-course/basic/formatted-output#-与-
 
 [back](#head)
 
@@ -68,9 +68,9 @@
 | [as 转换]     | 类型转换 | `(x as T)`                                                                                                             |
 |               | KWA      |                                                                                                                        |
 
-[array 数组]: https://course.rs/basic/compound-type/array.html
-[array slice]: https://course.rs/basic/compound-type/array.html#数组切片
-[as 转换]: https://course.rs/advance/into-types/converse.html#as转换
+[array 数组]: https://beatai.org/rust-course/basic/compound-type/array
+[array slice]: https://beatai.org/rust-course/basic/compound-type/array#数组切片
+[as 转换]: https://beatai.org/rust-course/advance/into-types/converse#as转换
 
 [back](#head)
 
@@ -88,16 +88,16 @@
 | [backtrace 栈展开] | 不可恢复错误 | `RUST_BACKTRACE=1 cargo run`                                                                                                    |
 |                    | KWB          |                                                                                                                                 |
 
-[变量遮蔽]: https://course.rs/basic/variable.html#变量遮蔽shadowing
-[变量覆盖]: https://course.rs/basic/match-pattern/match-if-let.html#变量覆盖
-[变量作用域]: https://course.rs/basic/ownership/ownership.html#变量作用域
-[bool 布尔]: https://course.rs/basic/base-type/char-bool.html#布尔bool
-[表达式]: https://course.rs/basic/base-type/statement-expression.html#表达式
-[语句]: https://course.rs/basic/base-type/statement-expression.html#语句
-[附录 c]: https://course.rs/appendix/expressions.html
-[break]: https://course.rs/basic/flow-control.html#break
-[backtrace 栈展开]: https://course.rs/basic/result-error/panic.html#backtrace-栈展开
-[box\<t\>]: https://course.rs/advance/smart-pointer/box.html#使用-boxt-将数据存储在堆上
+[变量遮蔽]: https://beatai.org/rust-course/basic/variable#变量遮蔽shadowing
+[变量覆盖]: https://beatai.org/rust-course/basic/match-pattern/match-if-let#变量覆盖
+[变量作用域]: https://beatai.org/rust-course/basic/ownership/ownership#变量作用域
+[bool 布尔]: https://beatai.org/rust-course/basic/base-type/char-bool#布尔bool
+[表达式]: https://beatai.org/rust-course/basic/base-type/statement-expression#表达式
+[语句]: https://beatai.org/rust-course/basic/base-type/statement-expression#语句
+[附录 c]: https://beatai.org/rust-course/appendix/expressions
+[break]: https://beatai.org/rust-course/basic/flow-control#break
+[backtrace 栈展开]: https://beatai.org/rust-course/basic/result-error/panic#backtrace-栈展开
+[box\<t\>]: https://beatai.org/rust-course/advance/smart-pointer/box#使用-boxt-将数据存储在堆上
 
 [back](#head)
 
@@ -115,15 +115,15 @@
 | [Closure]          | 闭包     | 闭包是一种匿名函数，它可以赋值给变量也可以作为参数传递给其它函数，不同于函数的是，它允许[捕获调用者作用域中的值] |
 |                    | KWC      |                                                                                                                  |
 
-[char 字符]: https://course.rs/basic/base-type/char-bool.html#字符类型char
-[const 常量]: https://course.rs/basic/variable.html#变量和常量之间的差异
-[copy 拷贝]: https://course.rs/basic/ownership/ownership.html#拷贝浅拷贝
-[clone 克隆]: https://course.rs/basic/ownership/ownership.html#克隆深拷贝
-[continue]: https://course.rs/basic/flow-control.html#continue
-[const 泛型]: https://course.rs/basic/trait/generic.html#const-泛型rust-151-版本引入的重要特性
-[const 泛型表达式]: https://course.rs/basic/trait/generic.html#const-泛型表达式
-[closure]: https://course.rs/advance/functional-programing/closure.html
-[捕获调用者作用域中的值]: https://course.rs/advance/functional-programing/closure.html#捕获作用域中的值
+[char 字符]: https://beatai.org/rust-course/basic/base-type/char-bool#字符类型char
+[const 常量]: https://beatai.org/rust-course/basic/variable#变量和常量之间的差异
+[copy 拷贝]: https://beatai.org/rust-course/basic/ownership/ownership#拷贝浅拷贝
+[clone 克隆]: https://beatai.org/rust-course/basic/ownership/ownership#克隆深拷贝
+[continue]: https://beatai.org/rust-course/basic/flow-control#continue
+[const 泛型]: https://beatai.org/rust-course/basic/trait/generic#const-泛型rust-151-版本引入的重要特性
+[const 泛型表达式]: https://beatai.org/rust-course/basic/trait/generic#const-泛型表达式
+[closure]: https://beatai.org/rust-course/advance/functional-programing/closure
+[捕获调用者作用域中的值]: https://beatai.org/rust-course/advance/functional-programing/closure#捕获作用域中的值
 
 [back](#head)
 
@@ -138,12 +138,12 @@
 | [Drop 释放资源]   | 智能指针 |                                                                                                                    |
 |                   | KWD      |                                                                                                                    |
 
-[derive]: https://course.rs/basic/trait/trait.html#通过-derive-派生特征
-[附录-派生特征]: https://course.rs/appendix/derive.html
-[点操作符]: https://course.rs/basic/converse.html#点操作符
-[deref 解引用]: https://course.rs/advance/smart-pointer/deref.html#deref-解引用
-[三种 deref 转换]: https://course.rs/advance/smart-pointer/deref.html#三种-deref-转换
-[drop 释放资源]: https://course.rs/advance/smart-pointer/drop.html#drop-释放资源
+[derive]: https://beatai.org/rust-course/basic/trait/trait#通过-derive-派生特征
+[附录-派生特征]: https://beatai.org/rust-course/appendix/derive
+[点操作符]: https://beatai.org/rust-course/basic/converse#点操作符
+[deref 解引用]: https://beatai.org/rust-course/advance/smart-pointer/deref#deref-解引用
+[三种 deref 转换]: https://beatai.org/rust-course/advance/smart-pointer/deref#三种-deref-转换
+[drop 释放资源]: https://beatai.org/rust-course/advance/smart-pointer/drop#drop-释放资源
 
 [back](#head)
 
@@ -155,8 +155,8 @@
 | [enum 同一化类型] | 枚举方法 | 枚举实现方法                             |
 |                   | KWE      |                                          |
 
-[enum 枚举]: https://course.rs/basic/compound-type/enum.html#枚举
-[enum 同一化类型]: https://course.rs/basic/compound-type/enum.html#同一化类型
+[enum 枚举]: https://beatai.org/rust-course/basic/compound-type/enum#枚举
+[enum 同一化类型]: https://beatai.org/rust-course/basic/compound-type/enum#同一化类型
 
 [back](#head)
 
@@ -172,14 +172,14 @@
 | [三种 Fn 的关系] | 闭包     |                                                                                                                                                                                                                                                              |
 |                  | KWF      |                                                                                                                                                                                                                                                              |
 
-[浮点数]: https://course.rs/basic/base-type/numbers.html#浮点类型
-[for 循环]: https://course.rs/basic/flow-control.html#for-循环
-['fn' 函数]: https://course.rs/basic/base-type/function.html
-[调用同名的方法]: https://course.rs/basic/trait/advance-trait.html#调用同名的方法
-[完全限定语法]: https://course.rs/basic/trait/advance-trait.html#完全限定语法
-[三种 fn 特征]: https://course.rs/advance/functional-programing/closure.html#三种-fn-特征
-[捕获变量]: https://course.rs/advance/functional-programing/closure.html#捕获作用域中的值
-[三种 fn 的关系]: https://course.rs/advance/functional-programing/closure.html#三种-fn-的关系
+[浮点数]: https://beatai.org/rust-course/basic/base-type/numbers#浮点类型
+[for 循环]: https://beatai.org/rust-course/basic/flow-control#for-循环
+['fn' 函数]: https://beatai.org/rust-course/basic/base-type/function
+[调用同名的方法]: https://beatai.org/rust-course/basic/trait/advance-trait#调用同名的方法
+[完全限定语法]: https://beatai.org/rust-course/basic/trait/advance-trait#完全限定语法
+[三种 fn 特征]: https://beatai.org/rust-course/advance/functional-programing/closure#三种-fn-特征
+[捕获变量]: https://beatai.org/rust-course/advance/functional-programing/closure#捕获作用域中的值
+[三种 fn 的关系]: https://beatai.org/rust-course/advance/functional-programing/closure#三种-fn-的关系
 
 [back](#head)
 
@@ -190,7 +190,7 @@
 | [Generics 泛型] | 泛型   | 用同一功能的函数处理不同类型的数据 |
 |                 | KWG    |                                    |
 
-[generics 泛型]: https://course.rs/basic/trait/generic.html
+[generics 泛型]: https://beatai.org/rust-course/basic/trait/generic
 
 [back](#head)
 
@@ -206,10 +206,10 @@
 | [更新 HashMap 中的值] |          |                                                                                                     |
 |                       | KWH      |                                                                                                     |
 
-[hashmap::new()]: https://course.rs/basic/collections/hashmap.html#使用-new-方法创建
-[元组创建 hashmap]: https://course.rs/basic/collections/hashmap.html#使用迭代器和-collect-方法创建
-[查询 hashmap]: https://course.rs/basic/collections/hashmap.html#查询-hashmap
-[更新 hashmap 中的值]: https://course.rs/basic/collections/hashmap.html#更新-hashmap-中的值
+[hashmap::new()]: https://beatai.org/rust-course/basic/collections/hashmap#使用-new-方法创建
+[元组创建 hashmap]: https://beatai.org/rust-course/basic/collections/hashmap#使用迭代器和-collect-方法创建
+[查询 hashmap]: https://beatai.org/rust-course/basic/collections/hashmap#查询-hashmap
+[更新 hashmap 中的值]: https://beatai.org/rust-course/basic/collections/hashmap#更新-hashmap-中的值
 
 [back](#head)
 
@@ -223,11 +223,11 @@
 | `impl Trait` 1. [函数参数] 2. [函数返回类型] |          |                                                                       |
 |                                              | KWI      |                                                                       |
 
-[if else]: https://course.rs/basic/flow-control.html#使用-if-来做分支控制
-[else if]: https://course.rs/basic/flow-control.html#使用-else-if-来处理多重条件
-[if let 匹配]: https://course.rs/basic/match-pattern/match-if-let.html#if-let-匹配
-[函数参数]: https://course.rs/basic/trait/trait.html#使用特征作为函数参数
-[函数返回类型]: https://course.rs/basic/trait/trait.html#函数返回中的-impl-trait
+[if else]: https://beatai.org/rust-course/basic/flow-control#使用-if-来做分支控制
+[else if]: https://beatai.org/rust-course/basic/flow-control#使用-else-if-来处理多重条件
+[if let 匹配]: https://beatai.org/rust-course/basic/match-pattern/match-if-let#if-let-匹配
+[函数参数]: https://beatai.org/rust-course/basic/trait/trait#使用特征作为函数参数
+[函数返回类型]: https://beatai.org/rust-course/basic/trait/trait#函数返回中的-impl-trait
 
 [back](#head)
 
@@ -256,10 +256,10 @@
 | [loop 循环] | 循环控制 | 无限循环，注意要配合 [`break`] |
 |             | KWL      |                                |
 
-[let]: https://course.rs/basic/variable.html#变量绑定
-[let mut]: https://course.rs/basic/variable.html#变量可变性
-[`break`]: https://course.rs/basic/flow-control.html#break
-[loop 循环]: https://course.rs/basic/flow-control.html#loop-循环
+[let]: https://beatai.org/rust-course/basic/variable#变量绑定
+[let mut]: https://beatai.org/rust-course/basic/variable#变量可变性
+[`break`]: https://beatai.org/rust-course/basic/flow-control#break
+[loop 循环]: https://beatai.org/rust-course/basic/flow-control#loop-循环
 
 [back](#head)
 
@@ -277,14 +277,14 @@
 | [move 移动]     | 转移所有权 | `let s2 = s1;`<br>`s1` 所有权转移给了 `s2`，`s1` 失效                                                                                                                    |
 |                 | KWM        |                                                                                                                                                                          |
 
-[模式绑定]: https://course.rs/basic/match-pattern/match-if-let.html#模式绑定
-[match 匹配]: https://course.rs/basic/match-pattern/match-if-let.html#match-匹配
-[matches! 宏]: https://course.rs/basic/match-pattern/match-if-let.html#matches宏
-[move 移动]: https://course.rs/basic/ownership/ownership.html#转移所有权
-[全模式列表]: https://course.rs/basic/match-pattern/all-patterns.html
-[match guard]: https://course.rs/basic/match-pattern/all-patterns.html#匹配守卫提供的额外条件
-[method 方法]: https://course.rs/basic/method.html#定义方法
-[method getter]: https://course.rs/basic/method.html#方法名跟结构体字段名相同
+[模式绑定]: https://beatai.org/rust-course/basic/match-pattern/match-if-let#模式绑定
+[match 匹配]: https://beatai.org/rust-course/basic/match-pattern/match-if-let#match-匹配
+[matches! 宏]: https://beatai.org/rust-course/basic/match-pattern/match-if-let#matches宏
+[move 移动]: https://beatai.org/rust-course/basic/ownership/ownership#转移所有权
+[全模式列表]: https://beatai.org/rust-course/basic/match-pattern/all-patterns
+[match guard]: https://beatai.org/rust-course/basic/match-pattern/all-patterns#匹配守卫提供的额外条件
+[method 方法]: https://beatai.org/rust-course/basic/method#定义方法
+[method getter]: https://beatai.org/rust-course/basic/method#方法名跟结构体字段名相同
 
 [back](#head)
 
@@ -296,8 +296,8 @@
 | [newtype ]          | newtype | 深入 Rust 类型                                                                             |
 |                     | KWN     |                                                                                            |
 
-[newtype for trait]: https://course.rs/basic/trait/advance-trait.html#在外部类型上实现外部特征newtype
-[元组结构体]: https://course.rs/basic/compound-type/struct.html#元组结构体tuple-struct
+[newtype for trait]: https://beatai.org/rust-course/basic/trait/advance-trait#在外部类型上实现外部特征newtype
+[元组结构体]: https://beatai.org/rust-course/basic/compound-type/struct#元组结构体tuple-struct
 [newtype ]: http://localhost:8080/advance/into-types/custom-type.html#newtype
 
 [back](#head)
@@ -310,8 +310,8 @@
 | [Option 解构] | 模式匹配    | 可以通过 `match` 来实现                                         |
 |               | KWO         |                                                                 |
 
-[option]: https://course.rs/basic/compound-type/enum.html#option-枚举用于处理空值
-[option 解构]: https://course.rs/basic/match-pattern/option.html#匹配-optiont
+[option]: https://beatai.org/rust-course/basic/compound-type/enum#option-枚举用于处理空值
+[option 解构]: https://beatai.org/rust-course/basic/match-pattern/option#匹配-optiont
 
 [back](#head)
 
@@ -324,9 +324,9 @@
 | [println!]            | 格式化参数   | 对输出内容格式有更多要求                                             |
 |                       | KWP          |                                                                      |
 
-[panic! 不可恢复错误]: https://course.rs/basic/result-error/panic.html#panic-与不可恢复错误
-[panic 原理剖析]: https://course.rs/basic/result-error/panic.html#panic-原理剖析
-[println!]: https://course.rs/basic/formatted-output.html#格式化参数
+[panic! 不可恢复错误]: https://beatai.org/rust-course/basic/result-error/panic#panic-与不可恢复错误
+[panic 原理剖析]: https://beatai.org/rust-course/basic/result-error/panic#panic-原理剖析
+[println!]: https://beatai.org/rust-course/basic/formatted-output#格式化参数
 
 [back](#head)
 
@@ -347,9 +347,9 @@
 | [对返回的错误进行处理] | 可恢复错误 | 对返回的错误进行处理                                                               |
 |                        | KWR        |                                                                                    |
 
-[range 序列]: https://course.rs/basic/base-type/numbers.html#序列range
-[result 可恢复的错误]: https://course.rs/basic/result-error/result.html#可恢复的错误-result
-[对返回的错误进行处理]: https://course.rs/basic/result-error/result.html#对返回的错误进行处理
+[range 序列]: https://beatai.org/rust-course/basic/base-type/numbers#序列range
+[result 可恢复的错误]: https://beatai.org/rust-course/basic/result-error/result#可恢复的错误-result
+[对返回的错误进行处理]: https://beatai.org/rust-course/basic/result-error/result#对返回的错误进行处理
 
 [back](#head)
 
@@ -375,23 +375,23 @@
 | [静态生命周期]         | 生命周期      | `&'static` 拥有该生命周期的引用可以和整个程序活得一样久，另见 [&'static 和 T: 'static]                                   |
 |                        | KWS           |                                                                                                                          |
 
-[所有权与堆栈]: https://course.rs/basic/ownership/ownership.html#所有权与堆栈
-[所有权原则]: https://course.rs/basic/ownership/ownership.html#所有权原则
-[slice 切片]: https://course.rs/basic/compound-type/string-slice.html#切片slice
-[string 字符串]: https://course.rs/basic/compound-type/string-slice.html#什么是字符串
-[string 操作]: https://course.rs/basic/compound-type/string-slice.html#操作字符串
-[string 转义]: https://course.rs/basic/compound-type/string-slice.html#字符串转义
-[struct 结构体]: https://course.rs/basic/compound-type/struct.html
-[self &self &mut self]: https://course.rs/basic/method.html#selfself-和-mut-self
-[self 与 self]: https://course.rs/basic/trait/trait-object#self-与-self
-[生命周期标注语法]: https://course.rs/basic/lifetime.html#生命周期标注语法
-[生命周期消除]: https://course.rs/basic/lifetime.html#生命周期消除
-[生命周期消除规则补充]: https://course.rs/advance/lifetime/advance.html#生命周期消除规则补充
-[函数中的生命周期]: https://course.rs/basic/lifetime.html#函数中的生命周期
-[结构体中的生命周期]: https://course.rs/basic/lifetime.html#结构体中的生命周期
-[方法中的生命周期]: https://course.rs/basic/lifetime.html#方法中的生命周期
-[静态生命周期]: https://course.rs/basic/lifetime.html#静态生命周期
-[&'static 和 t: 'static]: https://course.rs/advance/lifetime/static.html
+[所有权与堆栈]: https://beatai.org/rust-course/basic/ownership/ownership#所有权与堆栈
+[所有权原则]: https://beatai.org/rust-course/basic/ownership/ownership#所有权原则
+[slice 切片]: https://beatai.org/rust-course/basic/compound-type/string-slice#切片slice
+[string 字符串]: https://beatai.org/rust-course/basic/compound-type/string-slice#什么是字符串
+[string 操作]: https://beatai.org/rust-course/basic/compound-type/string-slice#操作字符串
+[string 转义]: https://beatai.org/rust-course/basic/compound-type/string-slice#字符串转义
+[struct 结构体]: https://beatai.org/rust-course/basic/compound-type/struct
+[self &self &mut self]: https://beatai.org/rust-course/basic/method#selfself-和-mut-self
+[self 与 self]: https://beatai.org/rust-course/basic/trait/trait-object#self-与-self
+[生命周期标注语法]: https://beatai.org/rust-course/basic/lifetime#生命周期标注语法
+[生命周期消除]: https://beatai.org/rust-course/basic/lifetime#生命周期消除
+[生命周期消除规则补充]: https://beatai.org/rust-course/advance/lifetime/advance#生命周期消除规则补充
+[函数中的生命周期]: https://beatai.org/rust-course/basic/lifetime#函数中的生命周期
+[结构体中的生命周期]: https://beatai.org/rust-course/basic/lifetime#结构体中的生命周期
+[方法中的生命周期]: https://beatai.org/rust-course/basic/lifetime#方法中的生命周期
+[静态生命周期]: https://beatai.org/rust-course/basic/lifetime#静态生命周期
+[&'static 和 t: 'static]: https://beatai.org/rust-course/advance/lifetime/static
 
 [back](#head)
 
@@ -409,16 +409,16 @@
 | [TryInto 转换]                                           | 类型转换   | 尝试进行一次转换，并返回一个 `Result`，可以对其进行相应的错误处理                                                                                                                           |
 |                                                          | KWT        |                                                                                                                                                                                             |
 
-[tuple 元组]: https://course.rs/basic/compound-type/tuple.html#元组
-[tuple struct]: https://course.rs/basic/compound-type/struct.html#元组结构体tuple-struct
-[trait 特征]: https://course.rs/basic/trait/trait.html#定义特征
-[t: trait]: https://course.rs/basic/trait/trait.html#特征约束trait-bound
-[trait object]: https://course.rs/basic/trait/trait-object.html#特征对象定义
-[关联类型]: https://course.rs/basic/trait/advance-trait.html#关联类型
-[默认泛型类型参数]: https://course.rs/basic/trait/advance-trait.html#默认泛型类型参数
-[特征定义中的特征约束]: https://course.rs/basic/trait/advance-trait.html#特征定义中的特征约束
-[tryinto 转换]: https://course.rs/advance/into-types/converse.html#tryinto-转换
-[类型别名]: https://course.rs/advance/into-types/custom-type.html#类型别名type-alias
+[tuple 元组]: https://beatai.org/rust-course/basic/compound-type/tuple#元组
+[tuple struct]: https://beatai.org/rust-course/basic/compound-type/struct#元组结构体tuple-struct
+[trait 特征]: https://beatai.org/rust-course/basic/trait/trait#定义特征
+[t: trait]: https://beatai.org/rust-course/basic/trait/trait#特征约束trait-bound
+[trait object]: https://beatai.org/rust-course/basic/trait/trait-object#特征对象定义
+[关联类型]: https://beatai.org/rust-course/basic/trait/advance-trait#关联类型
+[默认泛型类型参数]: https://beatai.org/rust-course/basic/trait/advance-trait#默认泛型类型参数
+[特征定义中的特征约束]: https://beatai.org/rust-course/basic/trait/advance-trait#特征定义中的特征约束
+[tryinto 转换]: https://beatai.org/rust-course/advance/into-types/converse#tryinto-转换
+[类型别名]: https://beatai.org/rust-course/advance/into-types/custom-type#类型别名type-alias
 
 [back](#head)
 
@@ -430,8 +430,8 @@
 | [unwrap & expect]  | 可恢复错误 | 如果返回成功，就将 `Ok(T)` 中的值取出来，如果失败，就直接 `panic` |
 |                    | KWU        |                                                                   |
 
-[unit-like struct]: https://course.rs/basic/compound-type/struct.html#单元结构体unit-like-struct
-[unwrap & expect]: https://course.rs/basic/result-error/result.html#失败就-panic-unwrap-和-expect
+[unit-like struct]: https://beatai.org/rust-course/basic/compound-type/struct#单元结构体unit-like-struct
+[unwrap & expect]: https://beatai.org/rust-course/basic/result-error/result#失败就-panic-unwrap-和-expect
 
 [back](#head)
 
@@ -449,13 +449,13 @@
 | [存储不同类型的元素]       |          | 通过使用枚举类型和特征对象来实现不同类型元素的存储                                             |
 |                            | KWV      |                                                                                                |
 
-[vector 动态数组]: https://course.rs/basic/collections/vector.html
-[vec::new]: https://course.rs/basic/collections/vector.html#vecnew
-[vec!\[\]]: https://course.rs/basic/collections/vector.html#vec
-[vec.push]: https://course.rs/basic/collections/vector.html#更新-vector
-[vec.get]: https://course.rs/basic/collections/vector.html#从-vector-中读取元素
-[迭代遍历 vector 中的元素]: https://course.rs/basic/collections/vector.html#迭代遍历-vector-中的元素
-[存储不同类型的元素]: https://course.rs/basic/collections/vector.html#存储不同类型的元素
+[vector 动态数组]: https://beatai.org/rust-course/basic/collections/vector
+[vec::new]: https://beatai.org/rust-course/basic/collections/vector#vecnew
+[vec!\[\]]: https://beatai.org/rust-course/basic/collections/vector#vec
+[vec.push]: https://beatai.org/rust-course/basic/collections/vector#更新-vector
+[vec.get]: https://beatai.org/rust-course/basic/collections/vector#从-vector-中读取元素
+[迭代遍历 vector 中的元素]: https://beatai.org/rust-course/basic/collections/vector#迭代遍历-vector-中的元素
+[存储不同类型的元素]: https://beatai.org/rust-course/basic/collections/vector#存储不同类型的元素
 
 [back](#head)
 
@@ -467,8 +467,8 @@
 | [where 约束] | 特征约束 | 当特征约束变多时，函数签名会很复杂，可以用 `where` 做形式上的改进 |
 |              | KWW      |                                                                   |
 
-[while 循环]: https://course.rs/basic/flow-control.html#while-循环
-[where 约束]: https://course.rs/basic/trait/trait.html#where-约束
+[while 循环]: https://beatai.org/rust-course/basic/flow-control#while-循环
+[where 约束]: https://beatai.org/rust-course/basic/trait/trait#where-约束
 
 [back](#head)
 
@@ -496,8 +496,8 @@
 | [整形字面量] | 进制书写 | 十进制 `98_222`<br>十六进制 `0xff`<br>八进制 `0o77`<br>二进制 `0b1111_0000`<br>字节(仅限于`u8`) `b'A'`           |
 |              | KWZ      |                                                                                                                  |
 
-[整数]: https://course.rs/basic/base-type/numbers.html#整数类型
-[整形字面量]: https://course.rs/basic/base-type/numbers.html#整数类型
+[整数]: https://beatai.org/rust-course/basic/base-type/numbers#整数类型
+[整形字面量]: https://beatai.org/rust-course/basic/base-type/numbers#整数类型
 
 [back](#head)
 

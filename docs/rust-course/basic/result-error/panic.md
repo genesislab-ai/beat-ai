@@ -127,7 +127,7 @@ note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose bac
 
 其中，默认的方式就是 `栈展开`，这意味着 Rust 会回溯栈上数据和函数调用，因此也意味着更多的善后工作，好处是可以给出充分的报错信息和栈调用信息，便于事后的问题复盘。`直接终止`，顾名思义，不清理数据就直接退出程序，善后工作交与操作系统来负责。
 
-对于绝大多数用户，使用默认选择是最好的，但是当你关心最终编译出的二进制可执行文件大小时，那么可以尝试去使用直接终止的方式，例如下面的配置修改 `Cargo.toml` 文件，实现在 [`release`](https://course.rs/first-try/cargo.html#手动编译和运行项目) 模式下遇到 `panic` 直接终止：
+对于绝大多数用户，使用默认选择是最好的，但是当你关心最终编译出的二进制可执行文件大小时，那么可以尝试去使用直接终止的方式，例如下面的配置修改 `Cargo.toml` 文件，实现在 [`release`](https://beatai.org/rust-course/first-try/cargo#手动编译和运行项目) 模式下遇到 `panic` 直接终止：
 
 ```rust
 [profile.release]
@@ -214,4 +214,4 @@ let home: IpAddr = "127.0.0.1".parse().unwrap();
 
 ## 课后练习
 
-> [Rust By Practice](https://practice-zh.course.rs/result-panic/panic.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/result-panic/panic.md)。
+> [Rust By Practice](https://practice-rust-zh.beatai.org/result-panic/panic.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/result-panic/panic.md)。

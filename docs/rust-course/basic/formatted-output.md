@@ -86,7 +86,7 @@ fn main() {
 }
 ```
 
-对于数值、字符串、数组，可以直接使用 `{:?}` 进行输出，但是对于结构体，需要[派生`Debug`](https://course.rs/appendix/derive.html)特征后，才能进行输出，总之很简单。
+对于数值、字符串、数组，可以直接使用 `{:?}` 进行输出，但是对于结构体，需要[派生`Debug`](https://beatai.org/rust-course/appendix/derive)特征后，才能进行输出，总之很简单。
 
 #### `Display` 特征
 
@@ -168,7 +168,7 @@ fn main() {
 
 #### 为外部类型实现 `Display` 特征
 
-在 Rust 中，无法直接为外部类型实现外部特征，但是可以使用[`newtype`](https://course.rs/advance/into-types/custom-type.html#newtype)解决此问题：
+在 Rust 中，无法直接为外部类型实现外部特征，但是可以使用[`newtype`](https://beatai.org/rust-course/advance/into-types/custom-type#newtype)解决此问题：
 
 ```rust
 struct Array(Vec<i32>);
@@ -462,7 +462,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ## 课后练习
 
-> [Rust By Practice](https://practice-zh.course.rs/formatted-output.html)，支持代码在线编辑和运行，并提供详细的习题解答。（本节暂无习题解答）
+> [Rust By Practice](https://practice-rust-zh.beatai.org/formatted-output.html)，支持代码在线编辑和运行，并提供详细的习题解答。（本节暂无习题解答）
 
 ## 总结
 

@@ -303,7 +303,7 @@ where
 }
 ```
 
-上面的缓存有一个很大的问题：只支持 `u32` 类型的值，若我们想要缓存 `&str` 类型，显然就行不通了，因此需要将 `u32` 替换成泛型 `E`，该练习就留给读者自己完成，具体代码可以参考[这里](https://practice-zh.course.rs/functional-programing/closure.html#closure-in-structs)
+上面的缓存有一个很大的问题：只支持 `u32` 类型的值，若我们想要缓存 `&str` 类型，显然就行不通了，因此需要将 `u32` 替换成泛型 `E`，该练习就留给读者自己完成，具体代码可以参考[这里](https://practice-rust-zh.beatai.org/functional-programing/closure.html#closure-in-structs)
 
 ## 捕获作用域中的值
 
@@ -752,7 +752,7 @@ help: use `impl Fn(i32) -> i32` as the return type, as all return paths are of t
 
 嗯，编译器提示我们加一个 `impl` 关键字，哦，这样一说，读者可能就想起来了，`impl Trait` 可以用来返回一个实现了指定特征的类型，那么这里 `impl Fn(i32) -> i32` 的返回值形式，说明我们要返回一个闭包类型，它实现了 `Fn(i32) -> i32` 特征。
 
-完美解决，但是，在[特征](https://course.rs/basic/trait/trait.html)那一章，我们提到过，`impl Trait` 的返回方式有一个非常大的局限，就是你只能返回同样的类型，例如：
+完美解决，但是，在[特征](https://beatai.org/rust-course/basic/trait/trait)那一章，我们提到过，`impl Trait` 的返回方式有一个非常大的局限，就是你只能返回同样的类型，例如：
 
 ```rust
 fn factory(x:i32) -> impl Fn(i32) -> i32 {
@@ -810,8 +810,8 @@ fn factory(x:i32) -> Box<dyn Fn(i32) -> i32> {
 
 ## 闭包的生命周期
 
-这块儿内容在进阶生命周期章节中有讲，这里就不再赘述，读者可移步[此处](https://course.rs/advance/lifetime/advance.html#闭包函数的消除规则)进行回顾。
+这块儿内容在进阶生命周期章节中有讲，这里就不再赘述，读者可移步[此处](https://beatai.org/rust-course/advance/lifetime/advance#闭包函数的消除规则)进行回顾。
 
 ## 课后习题
 
-> [Rust By Practice](https://practice-zh.course.rs/functional-programing/closure.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/functional-programing/closure.md)。
+> [Rust By Practice](https://practice-rust-zh.beatai.org/functional-programing/closure.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/functional-programing/closure.md)。

@@ -81,6 +81,19 @@
       "path": "/ai-insights/viewpoint/2026-03",
       "items": [
         {
+          "title": "构建 Claude Code 的经验：Prompt Caching 才是一切",
+          "path": "/ai-insights/viewpoint/prompt-caching-is-everything",
+          "file": "/docs/ai-insights/viewpoint/prompt-caching-is-everything.md",
+          "publishedAt": "2026-03-24",
+          "tags": [
+            "ClaudeCode",
+            "PromptCaching",
+            "Agent",
+            "缓存",
+            "工程实践"
+          ]
+        },
+        {
           "title": "Harness Engineering:2026年最被低估的工程革命",
           "path": "/ai-insights/viewpoint/harness-engineering-revolution",
           "file": "/docs/ai-insights/viewpoint/harness-engineering-revolution.md",

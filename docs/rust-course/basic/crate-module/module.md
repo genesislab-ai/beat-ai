@@ -38,7 +38,7 @@ mod front_of_house {
 
 ## 模块树
 
-在[上一节](https://course.rs/basic/crate-module/crate.html)中，我们提到过 `src/main.rs` 和 `src/lib.rs` 被称为包根(crate root)，这个奇葩名称的来源（我不想承认是自己翻译水平太烂-,-）是由于这两个文件的内容形成了一个模块 `crate`，该模块位于包的树形结构（由模块组成的树形结构）的根部：
+在[上一节](https://beatai.org/rust-course/basic/crate-module/crate)中，我们提到过 `src/main.rs` 和 `src/lib.rs` 被称为包根(crate root)，这个奇葩名称的来源（我不想承认是自己翻译水平太烂-,-）是由于这两个文件的内容形成了一个模块 `crate`，该模块位于包的树形结构（由模块组成的树形结构）的根部：
 
 ```console
 crate
@@ -369,4 +369,4 @@ pub mod hosting;
 
 ## 课后练习
 
-> [Rust By Practice](https://practice-zh.course.rs/crate-module/module.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/crate-module/module.md)。
+> [Rust By Practice](https://practice-rust-zh.beatai.org/crate-module/module.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/crate-module/module.md)。

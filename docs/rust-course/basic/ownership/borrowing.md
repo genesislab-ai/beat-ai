@@ -270,7 +270,7 @@ help: consider using the `'static` lifetime
 
 ```
 
-错误信息引用了一个我们还未介绍的功能：[生命周期(lifetimes)](https://course.rs/basic/lifetime.html)。不过，即使你不理解生命周期，也可以通过错误信息知道这段代码错误的关键信息：
+错误信息引用了一个我们还未介绍的功能：[生命周期(lifetimes)](https://beatai.org/rust-course/basic/lifetime)。不过，即使你不理解生命周期，也可以通过错误信息知道这段代码错误的关键信息：
 
 ```text
 this function's return type contains a borrowed value, but there is no value for it to be borrowed from.
@@ -312,4 +312,4 @@ fn no_dangle() -> String {
 
 ## 课后练习
 
-> [Rust By Practice](https://practice-zh.course.rs/ownership/borrowing.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/ownership/borrowing.md)。
+> [Rust By Practice](https://practice-rust-zh.beatai.org/ownership/borrowing.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/ownership/borrowing.md)。

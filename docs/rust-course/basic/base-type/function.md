@@ -18,7 +18,7 @@ fn add(i: i32, j: i32) -> i32 {
 
 ## 函数要点
 
-- 函数名和变量名使用[蛇形命名法(snake case)](https://course.rs/practice/naming.html)，例如 `fn add_two() {}`
+- 函数名和变量名使用[蛇形命名法(snake case)](https://beatai.org/rust-course/practice/naming)，例如 `fn add_two() {}`
 - 函数的位置可以随便放，Rust 不关心我们在哪里定义了函数，只要有定义即可
 - 每个函数参数都需要标注类型
 
@@ -168,7 +168,7 @@ error[E0308]: mismatched types // 类型不匹配
   |          - help: consider removing this semicolon
 ```
 
-还记得我们在[语句与表达式](https://course.rs/basic/base-type/statement-expression.html)中讲过的吗？只有表达式能返回值，而 `;` 结尾的是语句，在 Rust 中，一定要严格区分**表达式**和**语句**的区别，这个在其它语言中往往是被忽视的点。
+还记得我们在[语句与表达式](https://beatai.org/rust-course/basic/base-type/statement-expression)中讲过的吗？只有表达式能返回值，而 `;` 结尾的是语句，在 Rust 中，一定要严格区分**表达式**和**语句**的区别，这个在其它语言中往往是被忽视的点。
 
 ##### 永不返回的发散函数 `!`
 
@@ -192,4 +192,4 @@ fn forever() -> ! {
 
 ## 课后练习
 
-> [Rust By Practice](https://practice-zh.course.rs/basic-types/functions.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/basic-types/functions.md)。
+> [Rust By Practice](https://practice-rust-zh.beatai.org/basic-types/functions.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/basic-types/functions.md)。

@@ -264,7 +264,7 @@ impl Rectangle {
 
 ## 为枚举实现方法
 
-枚举类型之所以强大，不仅仅在于它好用、可以[同一化类型](https://course.rs/basic/compound-type/enum.html#同一化类型)，还在于，我们可以像结构体一样，为枚举实现方法：
+枚举类型之所以强大，不仅仅在于它好用、可以[同一化类型](https://beatai.org/rust-course/basic/compound-type/enum#同一化类型)，还在于，我们可以像结构体一样，为枚举实现方法：
 
 ```rust
 #![allow(unused)]
@@ -291,4 +291,4 @@ fn main() {
 
 ## 课后练习
 
-> [Rust By Practice](https://practice-zh.course.rs/method.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/method.md)。
+> [Rust By Practice](https://practice-rust-zh.beatai.org/method.html)，支持代码在线编辑和运行，并提供详细的[习题解答](https://github.com/sunface/rust-by-practice/blob/master/solutions/method.md)。
