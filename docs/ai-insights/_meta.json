@@ -81,6 +81,25 @@
       "path": "/ai-insights/viewpoint/2026-03",
       "items": [
         {
+          "title": "如何把 Claude Skills 的效果提升 10 倍：用 Karpathy 的 autoresearch 方法自动打磨",
+          "path": "/ai-insights/viewpoint/how-to-10x-your-claude-skills",
+          "file": "/docs/ai-insights/viewpoint/how-to-10x-your-claude-skills.md",
+          "publishedAt": "2026-03-25",
+          "contributors": [
+            {
+              "role": "author",
+              "name": "Ole Lehmann"
+            }
+          ],
+          "tags": [
+            "Claude Skills",
+            "Autoresearch",
+            "Prompt Engineering",
+            "Agent Workflow",
+            "Karpathy"
+          ]
+        },
+        {
           "title": "开源项目--1300 年前的唐朝制度，吊打了我用过的所有 AI 框架",
           "path": "/ai-insights/viewpoint/tang-dynasty-beats-ai-frameworks",
           "file": "/docs/ai-insights/viewpoint/tang-dynasty-beats-ai-frameworks.md",
