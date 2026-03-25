@@ -814,12 +814,120 @@
             {
               "title": "基础指南",
               "path": "/rust-course/cargo/guide/intro",
-              "file": "/docs/rust-course/cargo/guide/intro.md"
+              "file": "/docs/rust-course/cargo/guide/intro.md",
+              "children": [
+                {
+                  "title": "为何会有 Cargo",
+                  "path": "/rust-course/cargo/guide/why-exist",
+                  "file": "/docs/rust-course/cargo/guide/why-exist.md"
+                },
+                {
+                  "title": "下载并构建 Package",
+                  "path": "/rust-course/cargo/guide/download-package",
+                  "file": "/docs/rust-course/cargo/guide/download-package.md"
+                },
+                {
+                  "title": "添加依赖",
+                  "path": "/rust-course/cargo/guide/dependencies",
+                  "file": "/docs/rust-course/cargo/guide/dependencies.md"
+                },
+                {
+                  "title": "Package 目录结构",
+                  "path": "/rust-course/cargo/guide/package-layout",
+                  "file": "/docs/rust-course/cargo/guide/package-layout.md"
+                },
+                {
+                  "title": "Cargo.toml vs Cargo.lock",
+                  "path": "/rust-course/cargo/guide/cargo-toml-lock",
+                  "file": "/docs/rust-course/cargo/guide/cargo-toml-lock.md"
+                },
+                {
+                  "title": "测试和 CI",
+                  "path": "/rust-course/cargo/guide/tests-ci",
+                  "file": "/docs/rust-course/cargo/guide/tests-ci.md"
+                },
+                {
+                  "title": "Cargo 缓存",
+                  "path": "/rust-course/cargo/guide/cargo-cache",
+                  "file": "/docs/rust-course/cargo/guide/cargo-cache.md"
+                },
+                {
+                  "title": "Build 缓存",
+                  "path": "/rust-course/cargo/guide/build-cache",
+                  "file": "/docs/rust-course/cargo/guide/build-cache.md"
+                }
+              ]
             },
             {
               "title": "进阶指南",
               "path": "/rust-course/cargo/reference/intro",
-              "file": "/docs/rust-course/cargo/reference/intro.md"
+              "file": "/docs/rust-course/cargo/reference/intro.md",
+              "children": [
+                {
+                  "title": "指定依赖项",
+                  "path": "/rust-course/cargo/reference/specify-deps",
+                  "file": "/docs/rust-course/cargo/reference/specify-deps.md"
+                },
+                {
+                  "title": "依赖覆盖",
+                  "path": "/rust-course/cargo/reference/deps-overriding",
+                  "file": "/docs/rust-course/cargo/reference/deps-overriding.md"
+                },
+                {
+                  "title": "Cargo.toml 清单详解",
+                  "path": "/rust-course/cargo/reference/manifest",
+                  "file": "/docs/rust-course/cargo/reference/manifest.md"
+                },
+                {
+                  "title": "Cargo Target",
+                  "path": "/rust-course/cargo/reference/cargo-target",
+                  "file": "/docs/rust-course/cargo/reference/cargo-target.md"
+                },
+                {
+                  "title": "工作空间 Workspace",
+                  "path": "/rust-course/cargo/reference/workspaces",
+                  "file": "/docs/rust-course/cargo/reference/workspaces.md"
+                },
+                {
+                  "title": "条件编译 Features",
+                  "path": "/rust-course/cargo/reference/features/intro",
+                  "file": "/docs/rust-course/cargo/reference/features/intro.md",
+                  "children": [
+                    {
+                      "title": "Features 示例",
+                      "path": "/rust-course/cargo/reference/features/examples",
+                      "file": "/docs/rust-course/cargo/reference/features/examples.md"
+                    }
+                  ]
+                },
+                {
+                  "title": "发布配置 Profile",
+                  "path": "/rust-course/cargo/reference/profiles",
+                  "file": "/docs/rust-course/cargo/reference/profiles.md"
+                },
+                {
+                  "title": "通过 config.toml 对 Cargo 进行配置",
+                  "path": "/rust-course/cargo/reference/configuration",
+                  "file": "/docs/rust-course/cargo/reference/configuration.md"
+                },
+                {
+                  "title": "发布到 crates.io",
+                  "path": "/rust-course/cargo/reference/publishing-on-crates.io",
+                  "file": "/docs/rust-course/cargo/reference/publishing-on-crates.io.md"
+                },
+                {
+                  "title": "构建脚本 build.rs",
+                  "path": "/rust-course/cargo/reference/build-script/intro",
+                  "file": "/docs/rust-course/cargo/reference/build-script/intro.md",
+                  "children": [
+                    {
+                      "title": "构建脚本示例",
+                      "path": "/rust-course/cargo/reference/build-script/examples",
+                      "file": "/docs/rust-course/cargo/reference/build-script/examples.md"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -904,32 +1012,226 @@
             {
               "title": "不太优秀的单向链表：栈",
               "path": "/rust-course/too-many-lists/bad-stack/intro",
-              "file": "/docs/rust-course/too-many-lists/bad-stack/intro.md"
+              "file": "/docs/rust-course/too-many-lists/bad-stack/intro.md",
+              "children": [
+                {
+                  "title": "数据布局",
+                  "path": "/rust-course/too-many-lists/bad-stack/layout",
+                  "file": "/docs/rust-course/too-many-lists/bad-stack/layout.md"
+                },
+                {
+                  "title": "基本操作",
+                  "path": "/rust-course/too-many-lists/bad-stack/basic-operations",
+                  "file": "/docs/rust-course/too-many-lists/bad-stack/basic-operations.md"
+                },
+                {
+                  "title": "最后实现",
+                  "path": "/rust-course/too-many-lists/bad-stack/final-code",
+                  "file": "/docs/rust-course/too-many-lists/bad-stack/final-code.md"
+                }
+              ]
             },
             {
               "title": "还可以的单向链表",
               "path": "/rust-course/too-many-lists/ok-stack/intro",
-              "file": "/docs/rust-course/too-many-lists/ok-stack/intro.md"
+              "file": "/docs/rust-course/too-many-lists/ok-stack/intro.md",
+              "children": [
+                {
+                  "title": "优化类型定义",
+                  "path": "/rust-course/too-many-lists/ok-stack/type-optimizing",
+                  "file": "/docs/rust-course/too-many-lists/ok-stack/type-optimizing.md"
+                },
+                {
+                  "title": "定义 Peek 函数",
+                  "path": "/rust-course/too-many-lists/ok-stack/peek",
+                  "file": "/docs/rust-course/too-many-lists/ok-stack/peek.md"
+                },
+                {
+                  "title": "IntoIter 和 Iter",
+                  "path": "/rust-course/too-many-lists/ok-stack/iter",
+                  "file": "/docs/rust-course/too-many-lists/ok-stack/iter.md"
+                },
+                {
+                  "title": "IterMut 以及完整代码",
+                  "path": "/rust-course/too-many-lists/ok-stack/itermut",
+                  "file": "/docs/rust-course/too-many-lists/ok-stack/itermut.md"
+                }
+              ]
             },
             {
               "title": "持久化单向链表",
               "path": "/rust-course/too-many-lists/persistent-stack/intro",
-              "file": "/docs/rust-course/too-many-lists/persistent-stack/intro.md"
+              "file": "/docs/rust-course/too-many-lists/persistent-stack/intro.md",
+              "children": [
+                {
+                  "title": "数据布局和基本操作",
+                  "path": "/rust-course/too-many-lists/persistent-stack/layout",
+                  "file": "/docs/rust-course/too-many-lists/persistent-stack/layout.md"
+                },
+                {
+                  "title": "Drop、Arc 及完整代码",
+                  "path": "/rust-course/too-many-lists/persistent-stack/drop-arc",
+                  "file": "/docs/rust-course/too-many-lists/persistent-stack/drop-arc.md"
+                }
+              ]
             },
             {
               "title": "不咋样的双端队列",
               "path": "/rust-course/too-many-lists/deque/intro",
-              "file": "/docs/rust-course/too-many-lists/deque/intro.md"
+              "file": "/docs/rust-course/too-many-lists/deque/intro.md",
+              "children": [
+                {
+                  "title": "数据布局和基本操作",
+                  "path": "/rust-course/too-many-lists/deque/layout",
+                  "file": "/docs/rust-course/too-many-lists/deque/layout.md"
+                },
+                {
+                  "title": "Peek",
+                  "path": "/rust-course/too-many-lists/deque/peek",
+                  "file": "/docs/rust-course/too-many-lists/deque/peek.md"
+                },
+                {
+                  "title": "基本操作的对称镜像",
+                  "path": "/rust-course/too-many-lists/deque/symmetric",
+                  "file": "/docs/rust-course/too-many-lists/deque/symmetric.md"
+                },
+                {
+                  "title": "迭代器",
+                  "path": "/rust-course/too-many-lists/deque/iterator",
+                  "file": "/docs/rust-course/too-many-lists/deque/iterator.md"
+                },
+                {
+                  "title": "最终代码",
+                  "path": "/rust-course/too-many-lists/deque/final-code",
+                  "file": "/docs/rust-course/too-many-lists/deque/final-code.md"
+                }
+              ]
             },
             {
               "title": "不错的 unsafe 队列",
               "path": "/rust-course/too-many-lists/unsafe-queue/intro",
-              "file": "/docs/rust-course/too-many-lists/unsafe-queue/intro.md"
+              "file": "/docs/rust-course/too-many-lists/unsafe-queue/intro.md",
+              "children": [
+                {
+                  "title": "数据布局",
+                  "path": "/rust-course/too-many-lists/unsafe-queue/layout",
+                  "file": "/docs/rust-course/too-many-lists/unsafe-queue/layout.md"
+                },
+                {
+                  "title": "基本操作",
+                  "path": "/rust-course/too-many-lists/unsafe-queue/basics",
+                  "file": "/docs/rust-course/too-many-lists/unsafe-queue/basics.md"
+                },
+                {
+                  "title": "Miri",
+                  "path": "/rust-course/too-many-lists/unsafe-queue/miri",
+                  "file": "/docs/rust-course/too-many-lists/unsafe-queue/miri.md"
+                },
+                {
+                  "title": "栈借用",
+                  "path": "/rust-course/too-many-lists/unsafe-queue/stacked-borrow",
+                  "file": "/docs/rust-course/too-many-lists/unsafe-queue/stacked-borrow.md"
+                },
+                {
+                  "title": "测试栈借用",
+                  "path": "/rust-course/too-many-lists/unsafe-queue/testing-stacked-borrow",
+                  "file": "/docs/rust-course/too-many-lists/unsafe-queue/testing-stacked-borrow.md"
+                },
+                {
+                  "title": "数据布局 2",
+                  "path": "/rust-course/too-many-lists/unsafe-queue/layout2",
+                  "file": "/docs/rust-course/too-many-lists/unsafe-queue/layout2.md"
+                },
+                {
+                  "title": "额外的操作",
+                  "path": "/rust-course/too-many-lists/unsafe-queue/extra-junk",
+                  "file": "/docs/rust-course/too-many-lists/unsafe-queue/extra-junk.md"
+                },
+                {
+                  "title": "最终代码",
+                  "path": "/rust-course/too-many-lists/unsafe-queue/final-code",
+                  "file": "/docs/rust-course/too-many-lists/unsafe-queue/final-code.md"
+                }
+              ]
             },
             {
               "title": "生产级的双向 unsafe 队列",
               "path": "/rust-course/too-many-lists/production-unsafe-deque/intro",
-              "file": "/docs/rust-course/too-many-lists/production-unsafe-deque/intro.md"
+              "file": "/docs/rust-course/too-many-lists/production-unsafe-deque/intro.md",
+              "children": [
+                {
+                  "title": "数据布局",
+                  "path": "/rust-course/too-many-lists/production-unsafe-deque/layout",
+                  "file": "/docs/rust-course/too-many-lists/production-unsafe-deque/layout.md"
+                },
+                {
+                  "title": "型变与子类型",
+                  "path": "/rust-course/too-many-lists/production-unsafe-deque/variance-and-phantomData",
+                  "file": "/docs/rust-course/too-many-lists/production-unsafe-deque/variance-and-phantomData.md"
+                },
+                {
+                  "title": "基础结构",
+                  "path": "/rust-course/too-many-lists/production-unsafe-deque/basics",
+                  "file": "/docs/rust-course/too-many-lists/production-unsafe-deque/basics.md"
+                },
+                {
+                  "title": "恐慌与安全",
+                  "path": "/rust-course/too-many-lists/production-unsafe-deque/drop-and-panic-safety",
+                  "file": "/docs/rust-course/too-many-lists/production-unsafe-deque/drop-and-panic-safety.md"
+                },
+                {
+                  "title": "无聊的组合",
+                  "path": "/rust-course/too-many-lists/production-unsafe-deque/boring-combinatorics",
+                  "file": "/docs/rust-course/too-many-lists/production-unsafe-deque/boring-combinatorics.md"
+                },
+                {
+                  "title": "其它特征",
+                  "path": "/rust-course/too-many-lists/production-unsafe-deque/filling-in-random-bits",
+                  "file": "/docs/rust-course/too-many-lists/production-unsafe-deque/filling-in-random-bits.md"
+                },
+                {
+                  "title": "测试",
+                  "path": "/rust-course/too-many-lists/production-unsafe-deque/testing",
+                  "file": "/docs/rust-course/too-many-lists/production-unsafe-deque/testing.md"
+                },
+                {
+                  "title": "Send,Sync和编译测试",
+                  "path": "/rust-course/too-many-lists/production-unsafe-deque/send-sync-and-compile-tests",
+                  "file": "/docs/rust-course/too-many-lists/production-unsafe-deque/send-sync-and-compile-tests.md"
+                },
+                {
+                  "title": "实现游标",
+                  "path": "/rust-course/too-many-lists/production-unsafe-deque/implementing-cursors",
+                  "file": "/docs/rust-course/too-many-lists/production-unsafe-deque/implementing-cursors.md"
+                },
+                {
+                  "title": "测试游标",
+                  "path": "/rust-course/too-many-lists/production-unsafe-deque/testing-cursors",
+                  "file": "/docs/rust-course/too-many-lists/production-unsafe-deque/testing-cursors.md"
+                },
+                {
+                  "title": "最终代码",
+                  "path": "/rust-course/too-many-lists/production-unsafe-deque/final-code",
+                  "file": "/docs/rust-course/too-many-lists/production-unsafe-deque/final-code.md"
+                }
+              ]
+            },
+            {
+              "title": "使用高级技巧实现链表",
+              "path": "/rust-course/too-many-lists/advanced-lists/intro",
+              "file": "/docs/rust-course/too-many-lists/advanced-lists/intro.md",
+              "children": [
+                {
+                  "title": "双单向链表",
+                  "path": "/rust-course/too-many-lists/advanced-lists/double-singly",
+                  "file": "/docs/rust-course/too-many-lists/advanced-lists/double-singly.md"
+                },
+                {
+                  "title": "栈上的链表",
+                  "path": "/rust-course/too-many-lists/advanced-lists/stack-allocated",
+                  "file": "/docs/rust-course/too-many-lists/advanced-lists/stack-allocated.md"
+                }
+              ]
             }
           ]
         }
