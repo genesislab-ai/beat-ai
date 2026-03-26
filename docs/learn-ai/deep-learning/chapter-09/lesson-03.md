@@ -1,5 +1,3 @@
-# 动量梯度下降
-
 ## 9.3动量梯度下降
 
 今天我们来学习一种对梯度下降算法改进的算法：动量梯度下降算法（Momentum Gradient Descent）。它可以让训练时稳定并且迅速。
@@ -34,14 +32,20 @@
 
 以对w参数的更新为例，首先计算w的梯度：
 
-gw\=∂loss∂wg\_w=\\frac{\\partial loss}{\\partial w}gw​\=∂w∂loss​
+$$
+g_w=\frac{\partial loss}{\partial w}
+$$
 
-我们定义变量VwV\_wVw​, 表示gwg\_wgw​的指数加权平均值，每个batch按照下边的公式更新自身值：
+我们定义变量$V_w$, 表示$g_w$的指数加权平均值，每个batch按照下边的公式更新自身值：
 
-Vw\=βVw+(1−β)gwV\_w=\\beta V\_w+(1-\\beta)g\_wVw​\=βVw​+(1−β)gw​
+$$
+V_w=\beta V_w+(1-\beta)g_w
+$$
 
-更新w参数, lrlrlr是学习率：
+更新w参数,$lr$是学习率：
 
-w\=w−lrVww=w-lrV\_ww\=w−lrVw​
+$$
+w=w-lrV_w
+$$
 
-可以看到在训练过程中，对于参数w，一直需要保存一个指数加权平均值VwV\_wVw​。另外β\\betaβ 的取值一般为0.9。
+可以看到在训练过程中，对于参数w，一直需要保存一个指数加权平均值$V_w$。另外$\beta$的取值一般为0.9。

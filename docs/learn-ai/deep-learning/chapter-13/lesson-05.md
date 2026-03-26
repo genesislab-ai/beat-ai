@@ -1,5 +1,3 @@
-# 双向循环神经网络
-
 ## 13.5 双向循环神经网络
 
 双向循环神经网络（Bidirectional Recurrent Neural Network，BiRNN）是一种可以正向和反向循环的双向循环的神经网络。

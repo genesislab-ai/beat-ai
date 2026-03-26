@@ -1,8 +1,6 @@
-# 向量的点乘
-
 ## 2.4 向量点乘
 
-## 2.4.1 物理里的功
+## 2.4.1  物理里的功
 
 首先我们复习一下物理里对**功**的定义。
 
@@ -12,21 +10,27 @@
 
 上图中里的力**f**和位移**s**都是向量，它们都既有大小，又有方向，并且它们两个的方向并不相同。这时，计算功时，需要考虑将**f**投影到**s**上，得到**f'**，然后用**f'**的模长乘以**s**的模长就是功，用公式表示如下：
 
-W\=∣f∣×cosθ×∣s∣ W= |f|\\times cos\\theta \\times |s| W\=∣f∣×cosθ×∣s∣
+$$
+W= |f|\times cos\theta \times |s|
+$$
 
 ### 2.4.2 点乘的定义
 
 上边对功的计算得到的结果是一个标量，它等于两个向量的模长与它们之间夹角cos值的乘积。
 
-这实际上就是向量点乘（或者叫做点积、数量积）的定义。用符号 ⋅\\cdot⋅表示。所以功的定义可以用点积形式表示如下：
+这实际上就是向量点乘（或者叫做点积、数量积）的定义。用符号$\cdot$表示。所以功的定义可以用点积形式表示如下：
 
-W\=f⋅s\=∣f∣∣s∣cosθ W=f \\cdot s= |f||s| cos\\theta W\=f⋅s\=∣f∣∣s∣cosθ
+$$
+W=f \cdot s= |f||s| cos\theta
+$$
 
 上边在对功的计算中是将力**f**投影到位移**s**上，实际上通过观察公式我们可以发现，两个向量是对称的，也就是说将**s**投影到**f**上的向量**s'**的模长乘以**f**的模长也可以得到一样的结果。总之，点积就是两个向量模长与它们夹角余弦值的乘积。
 
 下边给出线性代数里点乘正式的定义，两个向量**a**和**b**。它们在同一个向量空间，也就说它们的分量个数相同。它们两个的点乘为：
 
-a⋅b\=∣a∣∣b∣cosθ a \\cdot b = |a||b|cos\\theta a⋅b\=∣a∣∣b∣cosθ
+$$
+a \cdot b = |a||b|cos\theta
+$$
 
 ### 2.4.3 点乘的计算
 
@@ -36,69 +40,105 @@ a⋅b\=∣a∣∣b∣cosθ a \\cdot b = |a||b|cos\\theta a⋅b\=∣a∣∣b∣co
 
 上边我们讲到过，根据点乘的定义，可以看到，两个向量是对称的，所以满足交换律。
 
-a⋅b\=b⋅a a \\cdot b = b \\cdot a a⋅b\=b⋅a
+$$
+a \cdot b = b \cdot a
+$$
 
 **数乘结合率**
 
-(λa)⋅b\=a⋅(λb)\=λ(a⋅b) (\\lambda a) \\cdot b=a \\cdot ( \\lambda b)= \\lambda (a \\cdot b) (λa)⋅b\=a⋅(λb)\=λ(a⋅b)
+$$
+(\lambda a) \cdot b=a \cdot ( \lambda b)= \lambda (a \cdot b)
+$$
 
 ![0212.png](../imgs/0212.png)
 
-根据上边这张图，可以帮助你理解。对于a⋅ba \\cdot ba⋅b 的结果等于**a**的模长乘以**b**的模长再乘以cosθ。当**b**变为原来的 λ倍后，它的模长变为原来的 λ倍，而**a**的模长和cosθ都不变，所以a⋅(λb)\=λ(a⋅b)\=(λa)⋅ba \\cdot (\\lambda b) = \\lambda (a \\cdot b) = (\\lambda a) \\cdot b a⋅(λb)\=λ(a⋅b)\=(λa)⋅b
+根据上边这张图，可以帮助你理解。对于$a \cdot b$的结果等于**a**的模长乘以**b**的模长再乘以cosθ。当**b**变为原来的 λ倍后，它的模长变为原来的 λ倍，而**a**的模长和cosθ都不变，所以$a \cdot (\lambda b) = \lambda (a \cdot b) = (\lambda a) \cdot b$
 
-**分配率** 点乘的分配率公式为：
+**分配率**点乘的分配率公式为：
 
-(a+b)⋅c\=a⋅c+b⋅c (a+b) \\cdot c=a \\cdot c + b\\cdot c (a+b)⋅c\=a⋅c+b⋅c
+$$
+(a+b) \cdot c=a \cdot c + b\cdot c
+$$
 
-![0213.png](../imgs/0213.png) 上边的图可以帮助你理解，对于**a+b**与**c**的点乘，等于**a+b**在**c**上的投影长度，乘以**c**的长度。而**a+b**在**c**上的投影的长度就等于**a**在**c**上投影的长度加上**b**在**c**上投影的长度。而**a**在**c**上投影的长度乘以**c**的长度就是**a**与**c**的点乘，对于**b**也同理。所以上式成立。
+![0213.png](../imgs/0213.png)
+
+上边的图可以帮助你理解，对于**a+b**与**c**的点乘，等于**a+b**在**c**上的投影长度，乘以**c**的长度。而**a+b**在**c**上的投影的长度就等于**a**在**c**上投影的长度加上**b**在**c**上投影的长度。而**a**在**c**上投影的长度乘以**c**的长度就是**a**与**c**的点乘，对于**b**也同理。所以上式成立。
 
 有了以上几个向量点乘的计算法则，我们就可以来推导点乘的计算公式了。
 
-以三维向量a⋅ba \\cdot ba⋅b为例： 将向量**a，b**用标准基向量**i,j,k**表示。比如对于**a**来说，它在x，y，z轴的分量分别为ax,ay,aza\_x,a\_y,a\_zax​,ay​,az​,则：
+以三维向量$a \cdot b$为例：
+将向量**a，b**用标准基向量**i,j,k**表示。比如对于**a**来说，它在x，y，z轴的分量分别为$a_x,a_y,a_z$,则：
 
-a⋅b\=(axi+ayj+azk)⋅(bxi+byj+bzk) a \\cdot b = (a\_xi+a\_yj+a\_zk) \\cdot (b\_xi+b\_yj+b\_zk) a⋅b\=(ax​i+ay​j+az​k)⋅(bx​i+by​j+bz​k)
+$$
+a \cdot b = (a_xi+a_yj+a_zk) \cdot (b_xi+b_yj+b_zk)
+$$
 
 根据分配率和数乘结合律有：
 
-a⋅b\=axbx(i⋅i)+axby(i⋅j)+axbz(i⋅k)+aybx(j⋅i)+ayby(j⋅j)+aybz(j⋅k)a \\cdot b = a\_xb\_x(i \\cdot i)+a\_xb\_y(i \\cdot j)+a\_xb\_z(i \\cdot k)+a\_yb\_x(j \\cdot i)+a\_yb\_y(j \\cdot j)+a\_yb\_z(j \\cdot k)a⋅b\=ax​bx​(i⋅i)+ax​by​(i⋅j)+ax​bz​(i⋅k)+ay​bx​(j⋅i)+ay​by​(j⋅j)+ay​bz​(j⋅k)
+$$
+a \cdot b = a_xb_x(i \cdot i)+a_xb_y(i \cdot j)+a_xb_z(i \cdot k)+a_yb_x(j \cdot i)+a_yb_y(j \cdot j)+a_yb_z(j \cdot k)
+$$
 
-+azbx(k⋅i)+azby(k⋅j)+azbz(k⋅k)+a\_zb\_x(k \\cdot i)+a\_zb\_y(k \\cdot j)+a\_zb\_z(k \\cdot k)+az​bx​(k⋅i)+az​by​(k⋅j)+az​bz​(k⋅k)
+$$
++a_zb_x(k \cdot i)+a_zb_y(k \cdot j)+a_zb_z(k \cdot k)
+$$
 
-上式中ax,ay,az,bx,by,bza\_x,a\_y,a\_z,b\_x,b\_y,b\_zax​,ay​,az​,bx​,by​,bz​都为标量，i,j,ki,j,ki,j,k为标准基向量。 接下来我们计算上式中括号内的标准基向量之间的点乘。因为标准基向量的模长为1，又加之它们与自身夹角为0度，cos值为1，所以它们与自身的点乘为1。即：
+上式中$a_x,a_y,a_z,b_x,b_y,b_z$都为标量，$i,j,k$为标准基向量。
+接下来我们计算上式中括号内的标准基向量之间的点乘。因为标准基向量的模长为1，又加之它们与自身夹角为0度，cos值为1，所以它们与自身的点乘为1。即：
 
-i⋅i\=1 i \\cdot i = 1 i⋅i\=1
+$$
+i \cdot i = 1
+$$
 
-j⋅j\=1 j \\cdot j = 1 j⋅j\=1
+$$
+j \cdot j = 1
+$$
 
-k⋅k\=1 k \\cdot k = 1 k⋅k\=1
+$$
+k \cdot k = 1
+$$
 
 又因为标准基向量之间都互相垂直，cos值为0，所以只要是不同标准基向量的点乘都为0。即：
 
-i⋅j\=0 i \\cdot j = 0 i⋅j\=0
+$$
+i \cdot j = 0
+$$
 
-i⋅k\=0 i \\cdot k = 0 i⋅k\=0
+$$
+i \cdot k = 0
+$$
 
-j⋅k\=0 j \\cdot k = 0 j⋅k\=0
+$$
+j \cdot k = 0
+$$
 
 带入上边式中有：
 
-a⋅b\=axbx+ayby+azbz a \\cdot b = a\_xb\_x+a\_yb\_y+a\_zb\_z a⋅b\=ax​bx​+ay​by​+az​bz​
+$$
+a \cdot b = a_xb_x+a_yb_y+a_zb_z
+$$
 
 可以看到点乘有一个非常简单的计算规则，就是两个向量的点乘等于两个向量各个分量的值相乘再加和，这个规则可以推广到任意维度的向量点乘上,即：
 
-a⋅b\=∑i\=1naibi a \\cdot b = \\sum\_{i=1}^{n}a\_ib\_i a⋅b\=i\=1∑n​ai​bi​
+$$
+a \cdot b = \sum_{i=1}^{n}a_ib_i
+$$
 
 ### 2.4.4 点乘的作用
 
 在深度学习里，经常用两个向量之间的夹角的余弦值来表示两个向量的相似度。比如在深度学习里，模型学习到的人脸特征都是用向量来表示，最终如何判断两个人脸向量是否代表同一个人，就是通过计算这两个向量之间的余弦值来判断。如果余弦值接近1。也就是两个向量之间夹角接近0，则认为这两个向量相似，也就是两个人脸照片相似。这里就用到了点乘。
 
-cosθ\=a⋅b∣a∣∣b∣ cos\\theta = \\frac{a \\cdot b}{ |a||b|} cosθ\=∣a∣∣b∣a⋅b​
+$$
+cos\theta = \frac{a \cdot b}{ |a||b|}
+$$
 
 很多情况下都会把特征向量归一化到模长为1，也就是|a||b|都为1。
 
 两个向量的相似性计算就变为：
 
-CosSimilarity\=a⋅b CosSimilarity= a \\cdot b CosSimilarity\=a⋅b
+$$
+CosSimilarity= a \cdot b
+$$
 
 所以最终变化为，计算两个向量之间的点乘，就是计算两个向量的相似度。
 

@@ -1,10 +1,8 @@
-# 二分类模型的评价指标
-
 ## 7.6二分类模型的评价指标
 
 当你在做一个深度学习项目时，首先第一件事就是要确立一个衡量模型性能的指标。以及表示项目成功的指标值是多少。
 
-![](../imgs/0723.png)
+![图片1](../imgs/0723.png)
 
 假设你是一个开在办公楼下饭店的老板，你每天会做不同的菜品，按份放在盘子里，不同的菜不同的标价。目前是雇了一个人来根据用户的选择来计价。但是人工成本高，而且效率低。你想换成一个摄像头来自动识别菜品，并计价，然后让用户扫码付费。但是模型不可能百分之百准确，如果模型识别错误，导致收费高于实际价格，顾客大多会发现，并提醒你更改价格。如果模型识别错误，计费少于实际价格，一般顾客可能不会提醒你，这会造成饭店的损失。但是你衡量模型带来的损失和雇一个人的成本，最后确定只要模型的识别准确率在98%以上就可以接受。这时实际上你就确立了这个深度学习项目的评价指标是准确率，成功指标是98%。
 
@@ -22,10 +20,11 @@
 
 在二分类问题中，我们有两个类别：正类（Positive）和负类（Negative）。根据模型对每个样本的预测值和label值之间的关系，每个预测结果可以落在四个格子中的一个。然后对每个格子中的样本计数。
 
-|  | 真实正类（Positive） | 真实负类（Negative） |
-| --- | --- | --- |
-| 预测正类 | True Positive(TP) | False Positive(FP) |
-| 预测负类 | False Negative(FN) | True Negative(TN) |
+真实正类（Positive）真实负类（Negative）
+
+预测正类True Positive(TP)False Positive(FP)
+
+预测负类False Negative(FN)True Negative(TN)
 
 **TP：**模型正确地将正样本预测为正类的数量。
 
@@ -37,13 +36,17 @@
 
 有了混淆矩阵，对于准确率的定义就可以表示为：
 
-Accuracy\=TP+TNTP+TN+FP+FNAccuracy=\\frac{TP+TN}{TP+TN+FP+FN}Accuracy\=TP+TN+FP+FNTP+TN​
+$$
+Accuracy=\frac{TP+TN}{TP+TN+FP+FN}
+$$
 
 ### 7.6.4精确率（Precision）
 
 精确率的定义为：被预测为正例的样本中，真正正例的比例。它的公式为：
 
-Precision\=TPTP+FPPrecision=\\frac{TP}{TP+FP}Precision\=TP+FPTP​
+$$
+Precision=\frac{TP}{TP+FP}
+$$
 
 假如你在一个化妆品公司负责活动运营，你准备通过给用户邮寄新的试用产品来吸引用户购买新产品。你需要一个模型从百万用户中选择一万个最有可能购买新产品的用户来进行活动推广。因为要邮寄试用品，活动是有成本的，你希望你的模型预测会购买的用户，实际真正购买的比例越高越好。所以此时你应该关注模型的精确率。
 
@@ -51,7 +54,9 @@ Precision\=TPTP+FPPrecision=\\frac{TP}{TP+FP}Precision\=TP+FPTP​
 
 召回率的定义为真实为正类的样本中，被正确预测为正类的比例。
 
-Recall\=TPTP+FNRecall=\\frac{TP}{TP+FN}Recall\=TP+FNTP​
+$$
+Recall=\frac{TP}{TP+FN}
+$$
 
 召回率这个指标就是为了解决我们上边例子中对罕见病进行预测的情况的。假设实际有10万个样本，其中只有1个是正例。如果模型全部预测为负例，那么模型的召回率就为0。
 
@@ -63,6 +68,8 @@ Recall\=TPTP+FNRecall=\\frac{TP}{TP+FN}Recall\=TP+FNTP​
 
 好的模型应该同时能兼顾精确率和召回率，F1-Score就是一个同时兼顾两者的指标，它的公式为：
 
-F1\=2⋅Precision⋅RecallPrecision+RecallF1=2\\cdot\\frac{Precision\\cdot Recall}{Precision+Recall}F1\=2⋅Precision+RecallPrecision⋅Recall​
+$$
+F1=2\cdot\frac{Precision\cdot Recall}{Precision+Recall}
+$$
 
 F1Score的取值范围为0到1之间。越大表明模型效果越好。

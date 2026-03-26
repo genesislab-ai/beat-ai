@@ -1,12 +1,12 @@
-# DeepSeekMOE
-
 ## 18.2 DeepSeekMOE
 
 上一节我们讲了普通的MOE大模型的架构，这一节我们就来学习DeepSeekMOE。DeepSeekMOE的论文题目为：迈向让专家更加专精的MOE语言模型（DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models）。可以看到DeepSeekMOE的改进点是让专家更加专精。
 
 ### 18.2.1 架构改进
 
-![1803.png](../imgs/1803.png) 基础的MOE实现如上图，假设有N个专家，每次选择2个专家。DeepSeek认为传统的MOE设置的专家数太少了，导致每个专家学习了过多，彼此不相关的知识，从而不够专精。比如一个医院里只有2名医生，一个内科一个外科，那每个医生要掌握的医学领域就很广。不利于医术的精进。
+![1803.png](../imgs/1803.png)
+
+基础的MOE实现如上图，假设有N个专家，每次选择2个专家。DeepSeek认为传统的MOE设置的专家数太少了，导致每个专家学习了过多，彼此不相关的知识，从而不够专精。比如一个医院里只有2名医生，一个内科一个外科，那每个医生要掌握的医学领域就很广。不利于医术的精进。
 
 ![1804.png](../imgs/1804.png)
 

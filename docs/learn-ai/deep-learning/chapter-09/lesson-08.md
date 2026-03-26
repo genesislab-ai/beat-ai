@@ -1,5 +1,3 @@
-# 批量归一化
-
 ## 9.8 批量归一化
 
 批量归一化（Batch Normalization）是一种在深度学习里常用的技术，它可以让深度神经网络的训练更稳定，收敛更快。
@@ -12,27 +10,38 @@
 
 ### 9.8.2 具体实现
 
-![0906.png](../imgs/0906.png) 对于上边的网络结构，输入层有2个feature，第一个层有2个神经元。对于第一层的这两个神经元，在经过激活前，有两个z值，z11,z21z\_1^1,z\_2^1z11​,z21​，经过激活后，也有两个a值a11,a21a\_1^1,a\_2^1a11​,a21​。 批量归一化可以对激活前的z值进行归一化，也可以对激活后的a值进行归一化。一般情况下我们是对激活前的z值进行归一化。
+![0906.png](../imgs/0906.png)
 
-另外我们训练时是按照mini-batch进行训练的，每次得到的z值也是一个batch的。比如batch size为512，对于第一层的z11,z21z\_1^1,z\_2^1z11​,z21​。这两个z值分别在每个batch的512个数据上计算均值μ\\muμ和标准差σ\\sigmaσ，然后进行标准化。
+对于上边的网络结构，输入层有2个feature，第一个层有2个神经元。对于第一层的这两个神经元，在经过激活前，有两个z值，$z_1^1,z_2^1$，经过激活后，也有两个a值$a_1^1,a_2^1$。
+批量归一化可以对激活前的z值进行归一化，也可以对激活后的a值进行归一化。一般情况下我们是对激活前的z值进行归一化。
 
-以z11z\_1^1z11​为例，具体计算公式如下，其中iii表示第iii个样本z11z\_1^1z11​的值，ϵ\\epsilonϵ是为了防止除0，加的一个很小的数。
+另外我们训练时是按照mini-batch进行训练的，每次得到的z值也是一个batch的。比如batch size为512，对于第一层的$z_1^1,z_2^1$。这两个z值分别在每个batch的512个数据上计算均值$\mu$和标准差$\sigma$，然后进行标准化。
 
-(z11)normi\=(z11)i−μ11σ11+ϵ(z\_1^1)\_{norm}^i=\\frac{(z\_1^1)^i-\\mu\_1^1}{\\sigma\_1^1+\\epsilon}(z11​)normi​\=σ11​+ϵ(z11​)i−μ11​​
+以$z_1^1$为例，具体计算公式如下，其中$i$表示第$i$个样本$z_1^1$的值，$\epsilon$是为了防止除0，加的一个很小的数。
 
-接下来，还需要对(z11)norm{(z\_1^1)}\_{norm}(z11​)norm​进行一个线性变化，才得到最终的Batch Norm后的结果。
+$$
+(z_1^1)_{norm}^i=\frac{(z_1^1)^i-\mu_1^1}{\sigma_1^1+\epsilon}
+$$
 
-(z11)BN\=γ11(z11)norm+β11{(z\_1^1)}\_{BN}=\\gamma\_1^1 {(z\_1^1)}\_{norm}+\\beta\_1^1(z11​)BN​\=γ11​(z11​)norm​+β11​
+接下来，还需要对${(z_1^1)}_{norm}$进行一个线性变化，才得到最终的Batch Norm后的结果。
 
-其中的γ,β\\gamma,\\betaγ,β都和权重一样是可以学习的参数。会在模型训练中进行更新。
+$$
+{(z_1^1)}_{BN}=\gamma_1^1 {(z_1^1)}_{norm}+\beta_1^1
+$$
 
-对于(z11){(z\_1^1)}(z11​)而言，如果：
+其中的$\gamma,\beta$都和权重一样是可以学习的参数。会在模型训练中进行更新。
 
-γ11\=σ11+ϵ\\gamma\_1^1=\\sigma\_1^1+\\epsilonγ11​\=σ11​+ϵ
+对于${(z_1^1)}$而言，如果：
 
-β11\=μ11\\beta\_1^1=\\mu\_1^1β11​\=μ11​
+$$
+\gamma_1^1=\sigma_1^1+\epsilon
+$$
 
-那么(z11)BN\=z11(z\_1^1)\_{BN}=z\_1^1(z11​)BN​\=z11​ 可以看到如果模型是有可能通过学习调整γ,β\\gamma,\\betaγ,β的值，让批量归一化后的值等于原始值的。但是，初始化时，一般设置γ\=1,β\=0\\gamma=1,\\beta=0γ\=1,β\=0大多数情况下它都限制了输出的均值在零，标准差在1附近。保证了输出分布的稳定性。
+$$
+\beta_1^1=\mu_1^1
+$$
+
+那么$(z_1^1)_{BN}=z_1^1$可以看到如果模型是有可能通过学习调整$\gamma,\beta$的值，让批量归一化后的值等于原始值的。但是，初始化时，一般设置$\gamma=1,\beta=0$大多数情况下它都限制了输出的均值在零，标准差在1附近。保证了输出分布的稳定性。
 
 因为每个神经元的z值，在进行批量归一化时都要减去这个batch z值的均值，所以就没有必要在计算z值的线性变化里加上偏置项b了，因为不论学到的b是多少，在减去均值后，结果都是一样的。所以如果你对一个线性层后边要加批量归一化，那么这一层就可以不设置偏置项。另外输出层一般不加批量归一化层。
 
@@ -53,45 +62,37 @@
 PyTorch里有定义好的BatchNorm的层，我们需要把它添加在线性变化和激活函数之间就可以了。它需要传入线性变化输出的神经元的个数。具体代码如下：
 
 ```
-import torch.nn as nn
+importtorch.nnasnnclassNeuralNetwork(nn.Module):def__init__(self):super().__init__()
+self.model = nn.Sequential(
+nn.Linear(28*28,128, bias=False),
+nn.BatchNorm1d(128),
+nn.ReLU(),
 
-class NeuralNetwork(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.model = nn.Sequential(
-            nn.Linear(28 * 28, 128, bias=False),
-            nn.BatchNorm1d(128),
-            nn.ReLU(),
+nn.Linear(128,128, bias=False),
+nn.BatchNorm1d(128),
+nn.ReLU(),
 
-            nn.Linear(128, 128, bias=False),
-            nn.BatchNorm1d(128),
-            nn.ReLU(),
+nn.Linear(128,128, bias=False),
+nn.BatchNorm1d(128),
+nn.ReLU(),
 
-            nn.Linear(128, 128, bias=False),
-            nn.BatchNorm1d(128),
-            nn.ReLU(),
+nn.Linear(128,64, bias=False),
+nn.BatchNorm1d(64),
+nn.ReLU(),
 
-            nn.Linear(128, 64, bias=False),
-            nn.BatchNorm1d(64),
-            nn.ReLU(),
+nn.Linear(64,10)
+)defforward(self, x):returnself.model(x)
 
-            nn.Linear(64, 10)
-        )
-
-    def forward(self, x):
-        return self.model(x)
 ```
 
 训练时和推理时的Batch Normalization的操作是不一样的。所以也要记得调用`model.train()`和`model.eval()`来切换模型的状态。
 
 ```
-model.train()
-## 在这里训练你的模型。
-model.eval()
-## 在这里利用模型进行预测。
+model.train()## 在这里训练你的模型。model.eval()## 在这里利用模型进行预测。
+
 ```
 
-* * *
+---
 
 恭喜你，通过这章学习，你已经学会了训练神经网络的优化技术。
 
