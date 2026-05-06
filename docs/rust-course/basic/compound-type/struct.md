@@ -34,12 +34,12 @@ struct User {
 为了使用上述结构体，我们需要创建 `User` 结构体的**实例**：
 
 ```rust
-    let user1 = User {
-        email: String::from("someone@example.com"),
-        username: String::from("someusername123"),
-        active: true,
-        sign_in_count: 1,
-    };
+let user1 = User {
+    email: String::from("someone@example.com"),
+    username: String::from("someusername123"),
+    active: true,
+    sign_in_count: 1,
+};
 ```
 
 有几点值得注意:
@@ -52,14 +52,14 @@ struct User {
 通过 `.` 操作符即可访问结构体实例内部的字段值，也可以修改它们：
 
 ```rust
-    let mut user1 = User {
-        email: String::from("someone@example.com"),
-        username: String::from("someusername123"),
-        active: true,
-        sign_in_count: 1,
-    };
+let mut user1 = User {
+    email: String::from("someone@example.com"),
+    username: String::from("someusername123"),
+    active: true,
+    sign_in_count: 1,
+};
 
-    user1.email = String::from("anotheremail@example.com");
+user1.email = String::from("anotheremail@example.com");
 ```
 
 需要注意的是，必须要将结构体实例声明为可变的，才能修改其中的字段，Rust 不支持将某个结构体某个字段标记为可变。
@@ -99,21 +99,21 @@ fn build_user(email: String, username: String) -> User {
 在实际场景中，有一种情况很常见：根据已有的结构体实例，创建新的结构体实例，例如根据已有的 `user1` 实例来构建 `user2`：
 
 ```rust
-  let user2 = User {
-        active: user1.active,
-        username: user1.username,
-        email: String::from("another@example.com"),
-        sign_in_count: user1.sign_in_count,
-    };
+let user2 = User {
+    active: user1.active,
+    username: user1.username,
+    email: String::from("another@example.com"),
+    sign_in_count: user1.sign_in_count,
+};
 ```
 
 老话重提，如果你从 TypeScript 过来，肯定觉得啰嗦爆了：竟然手动把 `user1` 的三个字段逐个赋值给 `user2`，好在 Rust 为我们提供了 `结构体更新语法`：
 
 ```rust
-  let user2 = User {
-        email: String::from("another@example.com"),
-        ..user1
-    };
+let user2 = User {
+    email: String::from("another@example.com"),
+    ..user1
+};
 ```
 
 因为 `user2` 仅仅在 `email` 上与 `user1` 不同，因此我们只需要对 `email` 进行赋值，剩下的通过结构体更新语法 `..user1` 即可完成。
@@ -130,30 +130,31 @@ fn build_user(email: String, username: String) -> User {
 > 值得注意的是：`username` 所有权被转移给了 `user2`，导致了 `user1` 无法再被使用，但是并不代表 `user1` 内部的其它字段不能被继续使用，例如：
 
 ```rust
-# #[derive(Debug)]
-# struct User {
-#     active: bool,
-#     username: String,
-#     email: String,
-#     sign_in_count: u64,
-# }
-# fn main() {
-let user1 = User {
-    email: String::from("someone@example.com"),
-    username: String::from("someusername123"),
-    active: true,
-    sign_in_count: 1,
-};
-let user2 = User {
-    active: user1.active,
-    username: user1.username,
-    email: String::from("another@example.com"),
-    sign_in_count: user1.sign_in_count,
-};
-println!("{}", user1.active);
-// 下面这行会报错
-println!("{:?}", user1);
-# }
+#[derive(Debug)]
+struct User {
+    active: bool,
+    username: String,
+    email: String,
+    sign_in_count: u64,
+}
+
+fn main() {
+    let user1 = User {
+        email: String::from("someone@example.com"),
+        username: String::from("someusername123"),
+        active: true,
+        sign_in_count: 1,
+    };
+    let user2 = User {
+        active: user1.active,
+        username: user1.username,
+        email: String::from("another@example.com"),
+        sign_in_count: user1.sign_in_count,
+    };
+    println!("{}", user1.active);
+    // 下面这行会报错
+    println!("{:?}", user1);
+}
 ```
 
 ## 结构体的内存排列
@@ -162,23 +163,23 @@ println!("{:?}", user1);
 
 ```rust
 #[derive(Debug)]
- struct File {
-   name: String,
-   data: Vec<u8>,
- }
+struct File {
+    name: String,
+    data: Vec<u8>,
+}
 
- fn main() {
-   let f1 = File {
-     name: String::from("f1.txt"),
-     data: Vec::new(),
-   };
+fn main() {
+    let f1 = File {
+         name: String::from("f1.txt"),
+         data: Vec::new(),
+    };
 
-   let f1_name = &f1.name;
-   let f1_length = &f1.data.len();
+    let f1_name = &f1.name;
+    let f1_length = &f1.data.len();
 
-   println!("{:?}", f1);
-   println!("{} is {} bytes long", f1_name, f1_length);
- }
+    println!("{:?}", f1);
+    println!("{} is {} bytes long", f1_name, f1_length);
+}
 ```
 
 上面定义的 `File` 结构体在内存中的排列如下图所示：
@@ -193,11 +194,11 @@ println!("{:?}", user1);
 结构体必须要有名称，但是结构体的字段可以没有名称，这种结构体长得很像元组，因此被称为元组结构体，例如：
 
 ```rust
-    struct Color(i32, i32, i32);
-    struct Point(i32, i32, i32);
+struct Color(i32, i32, i32);
+struct Point(i32, i32, i32);
 
-    let black = Color(0, 0, 0);
-    let origin = Point(0, 0, 0);
+let black = Color(0, 0, 0);
+let origin = Point(0, 0, 0);
 ```
 
 元组结构体在你希望有一个整体名称，但是又不关心里面字段的名称时将非常有用。例如上面的 `Point` 元组结构体，众所周知 3D 点是 `(x, y, z)` 形式的坐标点，因此我们无需再为内部的字段逐一命名为：`x`, `y`, `z`。
